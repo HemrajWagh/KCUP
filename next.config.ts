@@ -29,7 +29,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/api-proxy/:path*",
-        destination: "http://localhost:3001/:path*",
+        destination: "http://localhost:3030/:path*",
       },
     ];
   },

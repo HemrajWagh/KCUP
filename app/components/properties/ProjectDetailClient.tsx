@@ -1,1212 +1,4 @@
-// "use client";
 
-// import { useEffect, useRef, useState } from 'react';
-// import Link from 'next/link';
-// import { motion, AnimatePresence } from 'framer-motion';
-// import gsap from 'gsap';
-// import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-// import { useGSAP } from '@gsap/react';
-// import Swiper from 'swiper';
-// import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-// import 'swiper/css';
-// import 'swiper/css/pagination';
-// import 'swiper/css/navigation';
-
-// // Shadcn UI Components
-// import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-// import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
-// import { Dialog, DialogContent } from "@/components/ui/dialog";
-
-// import './project-detail.css';
-
-// if (typeof window !== 'undefined') {
-//   gsap.registerPlugin(ScrollTrigger);
-// }
-
-// const splitParagraphIntoSentences = (paragraph: string): string[] => {
-//   if (!paragraph) return [];
-//   return paragraph.split(/[.?]/).filter((sentence) => sentence.trim() !== '');
-// };
-
-// // --- ELITE GLASSMORPHISM DESIGN SYSTEM ---
-// const glassCard =
-//   "bg-white/80 backdrop-blur-3xl border border-white/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-[2.5rem] p-8 md:p-12";
-// const pillButton =
-//   "rounded-full px-6 py-2.5 text-sm font-bold tracking-widest uppercase transition-all duration-300";
-// const glassFluid =
-//   "bg-white/40 backdrop-blur-3xl border border-white/60 shadow-[0_20px_40px_rgb(0,0,0,0.03)] rounded-[3rem]";
-// const glassPill =
-//   "bg-white/50 backdrop-blur-3xl border border-white/70 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-full";
-// const btnPremium =
-//   "rounded-full px-8 py-3.5 text-xs font-bold tracking-widest uppercase transition-all duration-500 hover:-translate-y-1 hover:shadow-xl";
-
-// export default function ProjectDetailClient({
-//   projectData,
-// }: {
-//   projectData: any;
-// }) {
-//   const containerRef = useRef<HTMLDivElement>(null);
-
-//   const [locationData, setLocationData] = useState<any>(
-//     projectData?.maps?.length > 0 ? projectData.maps[0] : null,
-//   );
-//   const [location, setLocation] = useState<string>(
-//     projectData?.maps?.length > 0 ? projectData.maps[0].type : "School",
-//   );
-
-//   const [selectedTab, setSelectedTab] = useState<string>(() => {
-//     if (projectData?.flat_view?.terrace_view_360) return "terrace360";
-//     if (projectData?.flat_view?.walk_through) return "walkthrough";
-//     if (projectData?.flat_view?.flat_view_360) return "flat360";
-//     return "live";
-//   });
-
-//   const [tabSelected, setTabSelected] = useState<string>(() => {
-//     if (projectData?.flat_details?.amenities?.bulleting?.[0])
-//       return "ammenties";
-//     if (projectData?.flat_details?.specification?.bulleting) return "flat360";
-//     return "live";
-//   });
-
-//   const [isFormOpen, setIsFormOpen] = useState(false);
-//   const [formSubmissionStatus, setFormSubmissionStatus] = useState(false);
-//   const [modalVisible, setModalVisible] = useState(false);
-//   const [floorModalVisible, setFloorModalVisible] = useState(false);
-//   const [modalImg, setModalImg] = useState("");
-//   const [floorImg, setFloorImg] = useState("");
-//   const [activeIndex, setActiveIndex] = useState(0);
-
-//   const sentencesArray = splitParagraphIntoSentences(projectData?.description);
-//   const validTags = projectData?.tags?.filter(
-//     (tag: string) => tag && tag !== "Contact Us For Pricing",
-//   );
-
-//   useEffect(() => {
-//     if (!projectData?.title_image?.length) return;
-//     const interval = setInterval(() => {
-//       setActiveIndex((prev) => (prev + 1) % projectData.title_image.length);
-//     }, 6000);
-//     return () => clearInterval(interval);
-//   }, [projectData?.title_image]);
-
-//   useGSAP(
-//     () => {
-//       gsap.from(".fade-float", {
-//         scrollTrigger: { trigger: ".content-wrapper", start: "top 85%" },
-//         y: 60,
-//         opacity: 0,
-//         stagger: 0.15,
-//         duration: 1.4,
-//         ease: "expo.out",
-//       });
-//       ScrollTrigger.refresh();
-//     },
-//     { scope: containerRef },
-//   );
-
-//   const mapLocationSelect = (locType: string) => {
-//     setLocation(locType);
-//     const foundData = projectData?.maps?.find((m: any) => m.type === locType);
-//     if (foundData) setLocationData(foundData);
-//   };
-
-//   const openCommonForm = () => setIsFormOpen(true);
-
-//   const handleDocumentDownload = (url: string) => {
-//     if (formSubmissionStatus) {
-//       const a = document.createElement("a");
-//       a.href = url;
-//       a.target = "_blank";
-//       a.download = "kumarcorp.pdf";
-//       a.click();
-//     } else {
-//       openCommonForm();
-//       localStorage.setItem("currentPdf", url);
-//     }
-//   };
-
-//   return (
-//     <div
-//       ref={containerRef}
-//       className="w-full bg-[#f8fafc] min-h-screen relative text-slate-800 font-sans overflow-hidden"
-//     >
-//       {/* --- AMBIENT MESH BACKGROUND (For Glass Refraction) --- */}
-//       <div className="fixed inset-0 z-0 pointer-events-none opacity-60">
-//         <div className="absolute top-[-10%] left-[-10%] w-[60vw] h-[60vw] bg-brand-orange/10 rounded-full mix-blend-multiply filter blur-[100px] animate-pulse" />
-//         <div className="absolute bottom-[-20%] right-[-10%] w-[70vw] h-[70vw] bg-blue-100/40 rounded-full mix-blend-multiply filter blur-[120px]" />
-//         <div className="absolute top-[40%] left-[30%] w-[50vw] h-[50vw] bg-amber-50/50 rounded-full mix-blend-multiply filter blur-[90px]" />
-//       </div>
-
-//       {/* ========================================= */}
-//       {/* SECTION 1: FLOATING CINEMATIC HERO        */}
-//       {/* ========================================= */}
-//       <section className="relative w-full h-[95vh] lg:h-screen overflow-hidden z-10 p-4 md:p-8">
-//         {/* Floating Back Button */}
-//         <div className="absolute top-10 left-10 md:top-16 md:left-16 z-50">
-//           <Link
-//             href="/projects"
-//             className="group flex items-center justify-center w-14 h-14 bg-white/70 backdrop-blur-3xl border border-white shadow-xl rounded-full transition-transform duration-500 hover:scale-110"
-//           >
-//             <img
-//               src="/assets/blogs/backBtn.png"
-//               alt="Back"
-//               className="w-5 h-5 object-contain"
-//             />
-//           </Link>
-//         </div>
-
-//         {/* Hero Image Container (Rounded & Floating) */}
-//         <div className="relative w-full h-full rounded-[3rem] overflow-hidden shadow-2xl">
-//           <AnimatePresence mode="popLayout" initial={false}>
-//             {projectData?.title_image?.length > 0 && (
-//               <motion.img
-//                 key={activeIndex}
-//                 src={projectData.title_image[activeIndex]}
-//                 alt={projectData?.title}
-//                 initial={{ opacity: 0, scale: 1.05 }}
-//                 animate={{ opacity: 1, scale: 1 }}
-//                 exit={{ opacity: 0 }}
-//                 transition={{ duration: 1.5, ease: "easeInOut" }}
-//                 className="absolute inset-0 w-full h-full object-cover object-center"
-//               />
-//             )}
-//           </AnimatePresence>
-//           {/* Subtle vignette for text readability */}
-//           <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/10 pointer-events-none" />
-
-//           {/* Floating Hero Content Island */}
-//           <div className="absolute bottom-8 left-8 right-8 md:bottom-16 md:left-16 md:right-16 z-20 flex flex-col lg:flex-row justify-between items-end gap-8">
-//             <motion.div
-//               initial={{ opacity: 0, y: 40 }}
-//               animate={{ opacity: 1, y: 0 }}
-//               transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-//               className="w-full lg:w-auto max-w-4xl bg-white/30 backdrop-blur-3xl border border-white/50 rounded-[3rem] p-10 md:p-14 shadow-[0_20px_60px_rgb(0,0,0,0.15)]"
-//             >
-//               <span className="text-white text-xs font-bold tracking-[0.3em] uppercase mb-4 block opacity-90">
-//                 {projectData?.sub_title || "Premium Residence"}
-//               </span>
-//               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black uppercase leading-[1.05] tracking-tight text-white drop-shadow-sm">
-//                 {projectData?.title}
-//               </h1>
-
-//               {validTags?.length > 0 && (
-//                 <div className="flex flex-wrap gap-3 mt-10">
-//                   {validTags.map((tag: string, index: number) => (
-//                     <button
-//                       key={index}
-//                       onClick={openCommonForm}
-//                       className="px-6 py-2.5 rounded-full bg-white/20 hover:bg-white text-white hover:text-brand-black border border-white/40 text-xs font-bold tracking-widest uppercase transition-all duration-500 backdrop-blur-md"
-//                     >
-//                       {tag}
-//                     </button>
-//                   ))}
-//                 </div>
-//               )}
-//             </motion.div>
-
-//             {/* Premium Pill Indicators */}
-//             {projectData?.title_image?.length > 1 && (
-//               <div className="hidden lg:flex gap-3 items-center bg-black/20 backdrop-blur-2xl border border-white/20 px-8 py-4 rounded-full shadow-2xl">
-//                 {projectData.title_image.map((_: any, index: number) => (
-//                   <button
-//                     key={index}
-//                     onClick={() => setActiveIndex(index)}
-//                     className="relative h-2 w-14 bg-white/20 rounded-full overflow-hidden transition-all hover:bg-white/40"
-//                   >
-//                     {activeIndex === index && (
-//                       <motion.div
-//                         layoutId="pillIndicator"
-//                         className="absolute top-0 left-0 h-full w-full bg-white rounded-full"
-//                       />
-//                     )}
-//                   </button>
-//                 ))}
-//               </div>
-//             )}
-//           </div>
-//         </div>
-//       </section>
-
-//       {/* ========================================= */}
-//       {/* SECTION 2: SOFT BENTO CONTENT             */}
-//       {/* ========================================= */}
-//       <div className="relative z-20 content-wrapper px-4 md:px-[8%] py-16 flex flex-col gap-12">
-//         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-//           {/* Description Block */}
-//           <div className={`lg:col-span-12 ${glassFluid} fade-up bg-white`}>
-//             <h2 className="text-sm font-bold uppercase tracking-widest text-brand-orange mb-8">
-//               Project Overview
-//             </h2>
-//             <div className="columns-1 md:columns-2 gap-12 text-lg text-slate-600 leading-relaxed">
-//               <p className="mb-6">
-//                 {sentencesArray.slice(0, 4).map((sentence, i) => (
-//                   <span key={i}>{sentence}. </span>
-//                 ))}
-//               </p>
-//               <p>
-//                 {sentencesArray.slice(4).map((sentence, i) => (
-//                   <span key={i}>{sentence}. </span>
-//                 ))}
-//               </p>
-//             </div>
-//           </div>
-
-//           {/* RERA & Credits Block */}
-//           <div
-//             className={`lg:col-span-12 ${glassCard} flex flex-col justify-between fade-up bg-white`}
-//           >
-//             {projectData?.certification?.description && (
-//               <div className="mb-12">
-//                 <h2 className="text-sm font-bold uppercase tracking-widest text-brand-orange mb-6">
-//                   Compliance
-//                 </h2>
-//                 <div className="flex items-center gap-4 mb-4">
-//                   <img
-//                     src={
-//                       projectData?.city_name === "Bengaluru"
-//                         ? "/assets/icons/Karnatak RERA Logo_200 x 200.png"
-//                         : "/assets/icons/mahaReraIcon2.png"
-//                     }
-//                     alt="RERA"
-//                     className="w-12 h-12 object-contain"
-//                   />
-//                   <span className="font-bold uppercase tracking-widest text-sm text-brand-black">
-//                     {projectData?.city_name === "Bengaluru"
-//                       ? "Karnataka Rera"
-//                       : "Maha Rera"}
-//                   </span>
-//                 </div>
-//                 <p className="text-sm text-slate-500 mb-6 leading-relaxed">
-//                   Reg No:{" "}
-//                   <span className="font-semibold text-brand-black">
-//                     {projectData?.certification?.description}
-//                   </span>
-//                 </p>
-//                 {projectData?.certification?.qr_images?.[0] && (
-//                   <div className="flex gap-4">
-//                     {projectData.certification.qr_images.map(
-//                       (qrImage: string, i: number) => (
-//                         <img
-//                           key={i}
-//                           src={qrImage}
-//                           alt="QR Code"
-//                           className="w-20 h-20 rounded-2xl border border-slate-100 shadow-sm"
-//                         />
-//                       ),
-//                     )}
-//                   </div>
-//                 )}
-//               </div>
-//             )}
-
-//             {projectData?.tech_stack?.entries?.length > 0 && (
-//               <div>
-//                 <h2 className="text-sm font-bold uppercase tracking-widest text-brand-orange mb-6">
-//                   Team & Credits
-//                 </h2>
-//                 <ul className="space-y-4">
-//                   {projectData.tech_stack.entries.map(
-//                     (member: any, i: number) => (
-//                       <li
-//                         key={i}
-//                         className="flex justify-between border-b border-slate-100 pb-3 last:border-none"
-//                       >
-//                         <span className="text-xs text-slate-400 uppercase tracking-wider font-bold">
-//                           {member.key}
-//                         </span>
-//                         <span className="text-sm font-semibold text-brand-black">
-//                           {member.value}
-//                         </span>
-//                       </li>
-//                     ),
-//                   )}
-//                 </ul>
-//               </div>
-//             )}
-//           </div>
-//         </div>
-
-//         {projectData?.tech_stack?.entries?.length > 0 && (
-//           <div className="pt-8 border-t border-slate-200/50">
-//             {/* SUBHEAD: Nexa Bold */}
-//             <h2 className="font-['Nexa'] font-bold text-xs uppercase tracking-[0.2em] text-slate-400 mb-6">
-//               Team
-//             </h2>
-//             <ul className="space-y-5">
-//               {projectData.tech_stack.entries.map((member: any, i: number) => (
-//                 <li key={i} className="flex justify-between items-end">
-//                   {/* PARA: Nexa Regular */}
-//                   <span className="text-xs text-slate-400 uppercase tracking-widest font-['Nexa'] font-normal">
-//                     {member.key}
-//                   </span>
-//                   {/* SUBHEAD: Nexa Bold */}
-//                   <span className="text-sm font-['Nexa'] font-bold text-slate-800">
-//                     {member.value}
-//                   </span>
-//                 </li>
-//               ))}
-//             </ul>
-//           </div>
-//         )}
-//       </div>
-
-//       {/* ========================================= */}
-//       {/* SECTION 3: THE ULTIMATE GLASS TABS        */}
-//       {/* ========================================= */}
-//       {(() => {
-//         const flatView = projectData?.flat_view || {};
-//         const activeFeaturesCount = [
-//           flatView.flat_view_360,
-//           flatView.walk_through,
-//           flatView.live_view,
-//           flatView.terrace_view_360,
-//         ].filter(Boolean).length;
-//         if (activeFeaturesCount === 0) return null;
-
-//         return (
-//           <div className="mt-16 fade-float flex flex-col items-center">
-//             <Tabs
-//               value={selectedTab}
-//               onValueChange={setSelectedTab}
-//               className="w-full flex flex-col items-center"
-//             >
-//               {/* Stunning Floating Tab List */}
-//               <TabsList
-//                 className={`flex flex-wrap p-2 gap-2 ${glassPill} mb-12 h-auto`}
-//               >
-//                 {flatView.terrace_view_360 &&
-//                   projectData?.title === "Kumar Parc Residences" && (
-//                     <TabsTrigger
-//                       value="terrace360"
-//                       className="rounded-full px-8 py-3.5 text-xs font-bold uppercase tracking-widest data-[state=active]:bg-white data-[state=active]:text-brand-orange data-[state=active]:shadow-lg transition-all duration-500 text-slate-500 hover:text-slate-800"
-//                     >
-//                       Terrace 360°
-//                     </TabsTrigger>
-//                   )}
-//                 {flatView.walk_through && (
-//                   <TabsTrigger
-//                     value="walkthrough"
-//                     className="rounded-full px-8 py-3.5 text-xs font-bold uppercase tracking-widest data-[state=active]:bg-white data-[state=active]:text-brand-orange data-[state=active]:shadow-lg transition-all duration-500 text-slate-500 hover:text-slate-800"
-//                   >
-//                     {projectData?.title === "Kumar Parc Residences"
-//                       ? "Amenities 360°"
-//                       : "Walkthrough"}
-//                   </TabsTrigger>
-//                 )}
-//                 {flatView.flat_view_360 && (
-//                   <TabsTrigger
-//                     value="flat360"
-//                     className="rounded-full px-8 py-3.5 text-xs font-bold uppercase tracking-widest data-[state=active]:bg-white data-[state=active]:text-brand-orange data-[state=active]:shadow-lg transition-all duration-500 text-slate-500 hover:text-slate-800"
-//                   >
-//                     Flat 360°
-//                   </TabsTrigger>
-//                 )}
-//                 {flatView.live_view && (
-//                   <TabsTrigger
-//                     value="live"
-//                     className="rounded-full px-8 py-3.5 text-xs font-bold uppercase tracking-widest data-[state=active]:bg-white data-[state=active]:text-brand-orange data-[state=active]:shadow-lg transition-all duration-500 text-slate-500 hover:text-slate-800"
-//                   >
-//                     Live View
-//                   </TabsTrigger>
-//                 )}
-//               </TabsList>
-
-//               {/* Borderless Organic Video Container */}
-//               <div className="w-full rounded-[3rem] overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.1)] bg-white">
-//                 <TabsContent value="terrace360" className="m-0">
-//                   <iframe
-//                     src={flatView.terrace_view_360}
-//                     className="w-full aspect-video min-h-[60vh] max-h-[85vh]"
-//                     frameBorder="0"
-//                   />
-//                 </TabsContent>
-//                 <TabsContent value="walkthrough" className="m-0">
-//                   <iframe
-//                     src={flatView.walk_through}
-//                     className="w-full aspect-video min-h-[60vh] max-h-[85vh]"
-//                     frameBorder="0"
-//                   />
-//                 </TabsContent>
-//                 <TabsContent value="flat360" className="m-0">
-//                   <iframe
-//                     src={flatView.flat_view_360}
-//                     className="w-full aspect-video min-h-[60vh] max-h-[85vh]"
-//                     frameBorder="0"
-//                   />
-//                 </TabsContent>
-//                 <TabsContent value="live" className="m-0">
-//                   <iframe
-//                     src={flatView.live_view}
-//                     className="w-full aspect-video min-h-[60vh] max-h-[85vh]"
-//                     frameBorder="0"
-//                   />
-//                 </TabsContent>
-//               </div>
-//             </Tabs>
-//           </div>
-//         );
-//       })()}
-
-//       {/* ========================================= */}
-//       {/* SECTION 4: ORGANIC SPECIFICATIONS         */}
-//       {/* ========================================= */}
-//       {(() => {
-//         const hasAmenities =
-//           !!projectData?.flat_details?.amenities?.bulleting?.[0];
-//         const hasSpecs =
-//           !!projectData?.flat_details?.specification?.bulleting?.[0];
-//         const hasFloorPlan =
-//           !!projectData?.flat_details?.isometric_view?.media?.[0];
-//         if (!hasAmenities && !hasSpecs && !hasFloorPlan) return null;
-
-//         return (
-//           <div className="mt-16 fade-float flex flex-col items-center">
-//             <Tabs
-//               value={tabSelected}
-//               onValueChange={setTabSelected}
-//               className="w-full flex flex-col items-center"
-//             >
-//               <TabsList
-//                 className={`flex flex-wrap p-2 gap-2 ${glassPill} mb-12 h-auto`}
-//               >
-//                 {hasAmenities && (
-//                   <TabsTrigger
-//                     value="ammenties"
-//                     className="rounded-full px-8 py-3.5 text-xs font-bold uppercase tracking-widest data-[state=active]:bg-white data-[state=active]:text-brand-orange data-[state=active]:shadow-lg transition-all duration-500 text-slate-500 hover:text-slate-800"
-//                   >
-//                     Amenities
-//                   </TabsTrigger>
-//                 )}
-//                 {hasSpecs && (
-//                   <TabsTrigger
-//                     value="flat360"
-//                     className="rounded-full px-8 py-3.5 text-xs font-bold uppercase tracking-widest data-[state=active]:bg-white data-[state=active]:text-brand-orange data-[state=active]:shadow-lg transition-all duration-500 text-slate-500 hover:text-slate-800"
-//                   >
-//                     Specifications
-//                   </TabsTrigger>
-//                 )}
-//                 {hasFloorPlan && (
-//                   <TabsTrigger
-//                     value="live"
-//                     className="rounded-full px-8 py-3.5 text-xs font-bold uppercase tracking-widest data-[state=active]:bg-white data-[state=active]:text-brand-orange data-[state=active]:shadow-lg transition-all duration-500 text-slate-500 hover:text-slate-800"
-//                   >
-//                     Floor Plans
-//                   </TabsTrigger>
-//                 )}
-//               </TabsList>
-
-//               <div className="w-full">
-//                 <TabsContent value="ammenties" className="m-0">
-//                   <div
-//                     className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 ${glassFluid} p-8 md:p-12`}
-//                   >
-//                     <div className="rounded-[2.5rem] overflow-hidden shadow-lg h-full min-h-[400px]">
-//                       <img
-//                         src={projectData?.flat_details?.amenities?.images?.[0]}
-//                         alt="Amenity View"
-//                         className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000"
-//                       />
-//                     </div>
-//                     <div className="py-4 md:py-8 pr-4">
-//                       <Accordion type="single" collapsible className="w-full">
-//                         {projectData?.flat_details?.amenities?.bulleting?.map(
-//                           (amenity: any, i: number) => (
-//                             <AccordionItem
-//                               key={i}
-//                               value={`amenity-${i}`}
-//                               className="border-none mb-4 bg-white/40 rounded-[2rem] px-8 py-2"
-//                             >
-//                               <AccordionTrigger className="text-left font-bold text-lg text-slate-800 hover:text-brand-orange hover:no-underline py-4">
-//                                 {amenity.title}
-//                               </AccordionTrigger>
-//                               <AccordionContent className="text-slate-600 leading-relaxed pb-6">
-//                                 <ul className="space-y-3">
-//                                   {amenity.points?.map(
-//                                     (pt: string, j: number) =>
-//                                       pt ? (
-//                                         <li
-//                                           key={j}
-//                                           className="flex items-start gap-3"
-//                                         >
-//                                           <div className="w-1.5 h-1.5 rounded-full bg-brand-orange mt-2 flex-shrink-0" />
-//                                           {pt}
-//                                         </li>
-//                                       ) : null,
-//                                   )}
-//                                 </ul>
-//                               </AccordionContent>
-//                             </AccordionItem>
-//                           ),
-//                         )}
-//                       </Accordion>
-//                     </div>
-//                   </div>
-//                 </TabsContent>
-
-//                 <TabsContent value="flat360" className="m-0">
-//                   <div
-//                     className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 ${glassFluid} p-8 md:p-12`}
-//                   >
-//                     <div className="flex flex-col gap-8">
-//                       {projectData?.flat_details?.specification?.top_image && (
-//                         <div className="rounded-[2.5rem] overflow-hidden shadow-lg h-[300px]">
-//                           <img
-//                             src={
-//                               projectData.flat_details.specification.top_image
-//                             }
-//                             className="w-full h-full object-cover"
-//                             alt="Spec"
-//                           />
-//                         </div>
-//                       )}
-//                       {projectData?.flat_details?.specification
-//                         ?.bottom_image && (
-//                         <div className="rounded-[2.5rem] overflow-hidden shadow-lg w-4/5 self-end h-[250px]">
-//                           <img
-//                             src={
-//                               projectData.flat_details.specification
-//                                 .bottom_image
-//                             }
-//                             className="w-full h-full object-cover"
-//                             alt="Spec"
-//                           />
-//                         </div>
-//                       )}
-//                     </div>
-//                     <div className="py-4 pr-4">
-//                       <Accordion type="single" collapsible className="w-full">
-//                         {projectData?.flat_details?.specification?.bulleting?.map(
-//                           (spec: any, i: number) => (
-//                             <AccordionItem
-//                               key={i}
-//                               value={`spec-${i}`}
-//                               className="border-none mb-4 bg-white/40 rounded-[2rem] px-8 py-2"
-//                             >
-//                               <AccordionTrigger className="text-left font-bold text-lg text-slate-800 hover:text-brand-orange hover:no-underline py-4">
-//                                 {spec.title}
-//                               </AccordionTrigger>
-//                               <AccordionContent className="text-slate-600 leading-relaxed pb-6">
-//                                 <ul className="space-y-3">
-//                                   {spec.points?.map((pt: string, j: number) =>
-//                                     pt ? (
-//                                       <li
-//                                         key={j}
-//                                         className="flex items-start gap-3"
-//                                       >
-//                                         <div className="w-1.5 h-1.5 rounded-full bg-brand-orange mt-2 flex-shrink-0" />
-//                                         {pt}
-//                                       </li>
-//                                     ) : null,
-//                                   )}
-//                                 </ul>
-//                               </AccordionContent>
-//                             </AccordionItem>
-//                           ),
-//                         )}
-//                       </Accordion>
-//                     </div>
-//                   </div>
-//                 </TabsContent>
-
-//                 <TabsContent value="live" className="m-0">
-//                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-//                     {projectData?.flat_details?.isometric_view?.media?.map(
-//                       (plan: string, i: number) => (
-//                         <div
-//                           key={i}
-//                           className={`${glassFluid} p-8 cursor-pointer group flex flex-col items-center justify-center relative overflow-hidden bg-white/80`}
-//                           onClick={() => {
-//                             setFloorImg(plan);
-//                             setFloorModalVisible(true);
-//                           }}
-//                         >
-//                           <img
-//                             src={plan}
-//                             alt={`Floor Plan ${i}`}
-//                             className="w-full object-contain transition-transform duration-700 group-hover:scale-105"
-//                           />
-//                           <div className="absolute inset-0 bg-white/50 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-//                             <span
-//                               className={`${btnPremium} bg-brand-orange text-white shadow-xl border border-white/20`}
-//                             >
-//                               Zoom In
-//                             </span>
-//                           </div>
-//                         </div>
-//                       ),
-//                     )}
-//                   </div>
-//                 </TabsContent>
-//               </div>
-//             </Tabs>
-//           </div>
-//         );
-//       })()}
-
-//       {/* ========================================= */}
-//       {/* SECTION 5: FLOATING MAP                   */}
-//       {/* ========================================= */}
-//       {(projectData?.maps?.[0] || projectData?.location_in_map) && (
-//         <div
-//           className={`mt-16 fade-float ${glassFluid} p-4 bg-white/50 overflow-hidden flex flex-col lg:flex-row gap-4`}
-//         >
-//           <div className="lg:w-2/3 rounded-[2.5rem] overflow-hidden shadow-inner h-[500px] relative">
-//             <iframe
-//               src={projectData.location_in_map}
-//               className="absolute inset-0 w-full h-full border-0"
-//               allowFullScreen
-//               loading="lazy"
-//               referrerPolicy="no-referrer-when-downgrade"
-//             />
-//           </div>
-
-//           {projectData?.maps?.[0] && (
-//             <div className="lg:w-1/3 p-6 md:p-8 flex flex-col">
-//               <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-slate-400 mb-8 pl-2">
-//                 Neighborhood
-//               </h2>
-
-//               <div className="flex gap-3 mb-8 overflow-x-auto custom-scrollbar pb-4">
-//                 {projectData.maps.map((locType: any, i: number) => (
-//                   <button
-//                     key={i}
-//                     onClick={() => mapLocationSelect(locType.type)}
-//                     className={`flex-shrink-0 px-6 py-2.5 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300 ${location === locType.type ? "bg-brand-orange text-white shadow-lg" : "bg-white text-slate-500 hover:bg-slate-100"}`}
-//                   >
-//                     {locType.type}
-//                   </button>
-//                 ))}
-//               </div>
-
-//               <div className="flex justify-between text-xs font-bold text-slate-400 mb-4 uppercase tracking-widest px-4">
-//                 <span>{locationData?.title}</span>
-//                 <span>Dist</span>
-//               </div>
-
-//               <div className="space-y-3 overflow-y-auto custom-scrollbar flex-1 px-2 pb-4">
-//                 {locationData?.locations?.map((mapItem: any, i: number) => (
-//                   <div
-//                     key={i}
-//                     className="flex justify-between items-center p-4 bg-white/60 rounded-2xl hover:bg-white transition-colors border border-white"
-//                   >
-//                     <span className="text-slate-700 font-medium text-sm">
-//                       {mapItem.location_name}
-//                     </span>
-//                     <span className="font-mono bg-slate-50 text-brand-orange px-3 py-1.5 rounded-full text-xs font-bold shadow-sm">
-//                       {mapItem.distance}
-//                     </span>
-//                   </div>
-//                 ))}
-//               </div>
-//             </div>
-//           )}
-//         </div>
-//       )}
-
-//       {/* ========================================= */}
-//       {/* SECTION 6: PILL DOWNLOADS                 */}
-//       {/* ========================================= */}
-//       {projectData?.apartment_document?.length > 0 && (
-//         <div className="mt-16 fade-float flex justify-center">
-//           <div className="w-full max-w-4xl flex flex-col gap-4">
-//             <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-slate-400 mb-4 text-center">
-//               Resources
-//             </h2>
-//             {projectData.apartment_document.map((document: any, i: number) => (
-//               <div
-//                 key={i}
-//                 className={`flex flex-col sm:flex-row sm:items-center justify-between gap-6 p-4 pl-8 ${glassPill} bg-white/70 hover:bg-white transition-colors`}
-//               >
-//                 <p className="font-bold text-lg text-slate-800">
-//                   {document.title}
-//                 </p>
-//                 <div className="flex gap-2">
-//                   <button
-//                     onClick={() => handleDocumentDownload(document.location)}
-//                     className="px-6 py-3 rounded-full text-xs font-bold tracking-widest uppercase text-slate-500 hover:text-brand-orange transition-colors"
-//                   >
-//                     View
-//                   </button>
-//                   <button
-//                     onClick={() => handleDocumentDownload(document.location)}
-//                     className="px-8 py-3 rounded-full bg-brand-black text-white text-xs font-bold tracking-widest uppercase hover:bg-brand-orange transition-all shadow-md"
-//                   >
-//                     Download
-//                   </button>
-//                 </div>
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-//       )}
-//     </div>
-//   );
-// }
-
-// "use client";
-
-// import { useEffect, useRef, useState } from 'react';
-// import Link from 'next/link';
-// import { motion, AnimatePresence } from 'framer-motion';
-// import gsap from 'gsap';
-// import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-// import { useGSAP } from '@gsap/react';
-// import Swiper from 'swiper';
-// import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-// import 'swiper/css';
-// import 'swiper/css/pagination';
-// import 'swiper/css/navigation';
-
-// // Shadcn UI Components
-// import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-// import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
-// import { Dialog, DialogContent } from "@/components/ui/dialog";
-
-// import './project-detail.css';
-
-// if (typeof window !== 'undefined') {
-//   gsap.registerPlugin(ScrollTrigger);
-// }
-
-// const splitParagraphIntoSentences = (paragraph: string): string[] => {
-//   if (!paragraph) return [];
-//   return paragraph.split(/[.?]/).filter((sentence) => sentence.trim() !== '');
-// };
-
-// // Reusable Fresh Styles matching your header
-// const glassCard = "bg-white/80 backdrop-blur-3xl border border-white/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-[2.5rem] p-8 md:p-12";
-// const pillButton = "rounded-full px-6 py-2.5 text-sm font-bold tracking-widest uppercase transition-all duration-300";
-
-// export default function ProjectDetailClient({ projectData }: { projectData: any }) {
-//   const containerRef = useRef<HTMLDivElement>(null);
-
-//   const [locationData, setLocationData] = useState<any>(
-//     projectData?.maps?.length > 0 ? projectData.maps[0] : null
-//   );
-//   const [location, setLocation] = useState<string>(
-//     projectData?.maps?.length > 0 ? projectData.maps[0].type : 'School'
-//   );
-
-//   const [selectedTab, setSelectedTab] = useState<string>(() => {
-//     if (projectData?.flat_view?.terrace_view_360) return 'terrace360';
-//     if (projectData?.flat_view?.walk_through) return 'walkthrough';
-//     if (projectData?.flat_view?.flat_view_360) return 'flat360';
-//     return 'live';
-//   });
-
-//   const [tabSelected, setTabSelected] = useState<string>(() => {
-//     if (projectData?.flat_details?.amenities?.bulleting?.[0]) return 'ammenties';
-//     if (projectData?.flat_details?.specification?.bulleting) return 'flat360';
-//     return 'live';
-//   });
-
-//   const [isFormOpen, setIsFormOpen] = useState(false);
-//   const [formSubmissionStatus, setFormSubmissionStatus] = useState(false);
-//   const [modalVisible, setModalVisible] = useState(false);
-//   const [floorModalVisible, setFloorModalVisible] = useState(false);
-//   const [modalImg, setModalImg] = useState('');
-//   const [floorImg, setFloorImg] = useState('');
-//   const [activeIndex, setActiveIndex] = useState(0);
-
-//   const sentencesArray = splitParagraphIntoSentences(projectData?.description);
-//   const validTags = projectData?.tags?.filter((tag: string) => tag && tag !== "Contact Us For Pricing");
-
-//   useEffect(() => {
-//     if (!projectData?.title_image?.length) return;
-//     const interval = setInterval(() => {
-//       setActiveIndex((prev) => (prev + 1) % projectData.title_image.length);
-//     }, 6000);
-//     return () => clearInterval(interval);
-//   }, [projectData?.title_image]);
-
-//   useGSAP(
-//     () => {
-//       gsap.from(".fade-up", {
-//         scrollTrigger: { trigger: ".content-wrapper", start: "top 80%" },
-//         y: 40, opacity: 0, stagger: 0.1, duration: 1, ease: "power3.out"
-//       });
-//       ScrollTrigger.refresh();
-//     },
-//     { scope: containerRef },
-//   );
-
-//   useEffect(() => {
-//     if (projectData?.gallery_medias?.length) {
-//       new Swiper(".swiper-container-Gallary", {
-//         modules: [Navigation, Pagination],
-//         slidesPerView: 2.5, spaceBetween: 24, loop: true,
-//         navigation: { nextEl: ".swiper-next", prevEl: ".swiper-prev" },
-//         breakpoints: { 320: { slidesPerView: 1 }, 768: { slidesPerView: 2.5 } },
-//       });
-//     }
-//   }, [projectData, modalVisible, floorModalVisible]);
-
-//   const mapLocationSelect = (locType: string) => {
-//     setLocation(locType);
-//     const foundData = projectData?.maps?.find((m: any) => m.type === locType);
-//     if (foundData) setLocationData(foundData);
-//   };
-
-//   const openCommonForm = () => setIsFormOpen(true);
-
-//   const handleDocumentDownload = (url: string) => {
-//     if (formSubmissionStatus) {
-//       const a = document.createElement("a");
-//       a.href = url; a.target = "_blank"; a.download = "kumarcorp.pdf"; a.click();
-//     } else {
-//       openCommonForm();
-//       localStorage.setItem("currentPdf", url);
-//     }
-//   };
-
-//   return (
-//     <div ref={containerRef} className="w-full bg-slate-50 min-h-screen relative text-brand-black font-sans">
-
-//       {/* ========================================= */}
-//       {/* SECTION 1: FRESH CINEMATIC HERO           */}
-//       {/* ========================================= */}
-//       <section className="relative w-full h-[90vh] lg:h-screen overflow-hidden z-10">
-
-//         {/* Floating Pill Back Button */}
-//         <div className="absolute top-6 left-6 md:top-10 md:left-[5%] z-50">
-//           <Link href="/projects" className="group flex items-center justify-center w-12 h-12 rounded-full bg-white/60 backdrop-blur-xl border border-white/50 shadow-md transition-all duration-300 hover:bg-white hover:scale-105">
-//             <img src="/assets/blogs/backBtn.png" alt="Back" className="w-4 h-4 object-contain transition-all" />
-//           </Link>
-//         </div>
-
-//         {/* Full-Bleed Images */}
-//         <div className="absolute inset-0 z-0 h-full w-full">
-//           <AnimatePresence mode="popLayout" initial={false}>
-//             {projectData?.title_image?.length > 0 && (
-//               <motion.img
-//                 key={activeIndex} src={projectData.title_image[activeIndex]} alt={projectData?.title}
-//                 initial={{ opacity: 0, scale: 1.05 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }}
-//                 transition={{ duration: 1.2, ease: "easeInOut" }}
-//                 className="absolute inset-0 w-full h-full object-cover object-center"
-//               />
-//             )}
-//           </AnimatePresence>
-//           {/* Fades beautifully into the slate-50 background of the rest of the page */}
-//           <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-t from-slate-50 via-transparent to-transparent" />
-//         </div>
-
-//         {/* Frosted Glass Content Panel */}
-//         <div className="absolute bottom-12 left-0 w-full z-20 px-4 md:px-[8%] flex flex-col lg:flex-row justify-between items-end pb-8">
-//           <motion.div
-//             initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeOut" }}
-//             className="w-full lg:w-1/2 bg-white/60 backdrop-blur-3xl border border-white/60 rounded-[2.5rem] p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.08)]"
-//           >
-//             <span className="text-brand-orange font-bold text-sm tracking-widest uppercase mb-2 block">
-//               {projectData?.sub_title || "Premium Residence"}
-//             </span>
-//             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black uppercase leading-[1.1] tracking-tight text-brand-black text-balance">
-//               {projectData?.title}
-//             </h1>
-
-//             {validTags?.length > 0 && (
-//               <div className="flex flex-wrap gap-3 mt-8">
-//                 {validTags.map((tag: string, index: number) => (
-//                   <button key={index} onClick={openCommonForm} className={`${pillButton} bg-white border border-gray-200 text-brand-black hover:border-brand-orange hover:text-brand-orange shadow-sm`}>
-//                     {tag}
-//                   </button>
-//                 ))}
-//               </div>
-//             )}
-//           </motion.div>
-
-//           {/* Pill Slide Indicators */}
-//           {projectData?.title_image?.length > 1 && (
-//             <div className="hidden lg:flex gap-3 items-center bg-white/40 backdrop-blur-xl border border-white/50 px-6 py-3 rounded-full shadow-lg">
-//               {projectData.title_image.map((_: any, index: number) => (
-//                 <button key={index} onClick={() => setActiveIndex(index)} className="relative h-2 w-12 bg-black/10 rounded-full overflow-hidden transition-all hover:bg-black/20">
-//                   {activeIndex === index && <motion.div layoutId="pillIndicator" className="absolute top-0 left-0 h-full w-full bg-brand-orange rounded-full" />}
-//                 </button>
-//               ))}
-//             </div>
-//           )}
-//         </div>
-//       </section>
-
-//       {/* ========================================= */}
-//       {/* SECTION 2: SOFT BENTO CONTENT             */}
-//       {/* ========================================= */}
-//       <div className="relative z-20 content-wrapper px-4 md:px-[8%] py-16 flex flex-col gap-12">
-
-//         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-
-//           {/* Description Block */}
-//           <div className={`lg:col-span-12 ${glassCard} fade-up bg-white`}>
-//             <h2 className="text-sm font-bold uppercase tracking-widest text-brand-orange mb-8">Project Overview</h2>
-//             <div className="columns-1 md:columns-2 gap-12 text-lg text-slate-600 leading-relaxed">
-//               <p className="mb-6">
-//                 {sentencesArray.slice(0, 4).map((sentence, i) => <span key={i}>{sentence}. </span>)}
-//               </p>
-//               <p>
-//                 {sentencesArray.slice(4).map((sentence, i) => <span key={i}>{sentence}. </span>)}
-//               </p>
-//             </div>
-//           </div>
-
-//           {/* RERA & Credits Block */}
-//           <div className={`lg:col-span-12 ${glassCard} flex flex-col justify-between fade-up bg-white`}>
-//             {projectData?.certification?.description && (
-//               <div className="mb-12">
-//                 <h2 className="text-sm font-bold uppercase tracking-widest text-brand-orange mb-6">Compliance</h2>
-//                 <div className="flex items-center gap-4 mb-4">
-//                   <img src={projectData?.city_name === "Bengaluru" ? "/assets/icons/Karnatak RERA Logo_200 x 200.png" : "/assets/icons/mahaReraIcon2.png"} alt="RERA" className="w-12 h-12 object-contain" />
-//                   <span className="font-bold uppercase tracking-widest text-sm text-brand-black">{projectData?.city_name === "Bengaluru" ? "Karnataka Rera" : "Maha Rera"}</span>
-//                 </div>
-//                 <p className="text-sm text-slate-500 mb-6 leading-relaxed">
-//                   Reg No: <span className="font-semibold text-brand-black">{projectData?.certification?.description}</span>
-//                 </p>
-//                 {projectData?.certification?.qr_images?.[0] && (
-//                   <div className="flex gap-4">
-//                     {projectData.certification.qr_images.map((qrImage: string, i: number) => (
-//                       <img key={i} src={qrImage} alt="QR Code" className="w-20 h-20 rounded-2xl border border-slate-100 shadow-sm" />
-//                     ))}
-//                   </div>
-//                 )}
-//               </div>
-//             )}
-
-//             {projectData?.tech_stack?.entries?.length > 0 && (
-//               <div>
-//                 <h2 className="text-sm font-bold uppercase tracking-widest text-brand-orange mb-6">Team & Credits</h2>
-//                 <ul className="space-y-4">
-//                   {projectData.tech_stack.entries.map((member: any, i: number) => (
-//                     <li key={i} className="flex justify-between border-b border-slate-100 pb-3 last:border-none">
-//                       <span className="text-xs text-slate-400 uppercase tracking-wider font-bold">{member.key}</span>
-//                       <span className="text-sm font-semibold text-brand-black">{member.value}</span>
-//                     </li>
-//                   ))}
-//                 </ul>
-//               </div>
-//             )}
-//           </div>
-//         </div>
-
-//         {/* ========================================= */}
-//         {/* SECTION 3: PILL TABS (VIEWS)              */}
-//         {/* ========================================= */}
-//         {(() => {
-//           const flatView = projectData?.flat_view || {};
-//           const activeFeaturesCount = [flatView.flat_view_360, flatView.walk_through, flatView.live_view, flatView.terrace_view_360].filter(Boolean).length;
-//           if (activeFeaturesCount === 0) return null;
-
-//           return (
-//             <div className="mt-12 fade-up">
-//               <Tabs value={selectedTab} onValueChange={setSelectedTab} className="w-full">
-//                 {/* Pill Tab List */}
-//                 <div className="flex justify-center mb-8">
-//                   <TabsList className="flex flex-wrap p-2 bg-white/60 backdrop-blur-xl rounded-full shadow-sm border border-white/80 gap-2">
-//                     {flatView.terrace_view_360 && projectData?.title === "Kumar Parc Residences" && (
-//                       <TabsTrigger value="terrace360" className="rounded-full px-8 py-3 text-sm font-bold uppercase tracking-wider data-[state=active]:bg-brand-orange data-[state=active]:text-white data-[state=active]:shadow-md transition-all text-slate-500 hover:text-brand-black">Terrace 360°</TabsTrigger>
-//                     )}
-//                     {flatView.walk_through && (
-//                       <TabsTrigger value="walkthrough" className="rounded-full px-8 py-3 text-sm font-bold uppercase tracking-wider data-[state=active]:bg-brand-orange data-[state=active]:text-white data-[state=active]:shadow-md transition-all text-slate-500 hover:text-brand-black">
-//                          {projectData?.title === "Kumar Parc Residences" ? "Amenities 360°" : "Walkthrough"}
-//                       </TabsTrigger>
-//                     )}
-//                     {flatView.flat_view_360 && (
-//                       <TabsTrigger value="flat360" className="rounded-full px-8 py-3 text-sm font-bold uppercase tracking-wider data-[state=active]:bg-brand-orange data-[state=active]:text-white data-[state=active]:shadow-md transition-all text-slate-500 hover:text-brand-black">Flat 360°</TabsTrigger>
-//                     )}
-//                     {flatView.live_view && (
-//                       <TabsTrigger value="live" className="rounded-full px-8 py-3 text-sm font-bold uppercase tracking-wider data-[state=active]:bg-brand-orange data-[state=active]:text-white data-[state=active]:shadow-md transition-all text-slate-500 hover:text-brand-black">Live View</TabsTrigger>
-//                     )}
-//                   </TabsList>
-//                 </div>
-
-//                 {/* Soft Video/Iframe Container */}
-//                 <div className="w-full rounded-[2.5rem] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-white bg-white">
-//                   <TabsContent value="terrace360" className="m-0"><iframe src={flatView.terrace_view_360} className="w-full aspect-video min-h-[60vh]" frameBorder="0" /></TabsContent>
-//                   <TabsContent value="walkthrough" className="m-0"><iframe src={flatView.walk_through} className="w-full aspect-video min-h-[60vh]" frameBorder="0" /></TabsContent>
-//                   <TabsContent value="flat360" className="m-0"><iframe src={flatView.flat_view_360} className="w-full aspect-video min-h-[60vh]" frameBorder="0" /></TabsContent>
-//                   <TabsContent value="live" className="m-0"><iframe src={flatView.live_view} className="w-full aspect-video min-h-[60vh]" frameBorder="0" /></TabsContent>
-//                 </div>
-//               </Tabs>
-//             </div>
-//           );
-//         })()}
-
-//         {/* ========================================= */}
-//         {/* SECTION 4: SPECIFICATIONS & PLANS         */}
-//         {/* ========================================= */}
-//         {(() => {
-//           const hasAmenities = !!projectData?.flat_details?.amenities?.bulleting?.[0];
-//           const hasSpecs = !!projectData?.flat_details?.specification?.bulleting?.[0];
-//           const hasFloorPlan = !!projectData?.flat_details?.isometric_view?.media?.[0];
-//           if (!hasAmenities && !hasSpecs && !hasFloorPlan) return null;
-
-//           return (
-//             <div className="mt-12 fade-up">
-//               <Tabs value={tabSelected} onValueChange={setTabSelected} className="w-full">
-
-//                 <div className="flex justify-center mb-8">
-//                   <TabsList className="flex flex-wrap p-2 bg-white/60 backdrop-blur-xl rounded-full shadow-sm border border-white/80 gap-2">
-//                     {hasAmenities && <TabsTrigger value="ammenties" className="rounded-full px-8 py-3 text-sm font-bold uppercase tracking-wider data-[state=active]:bg-brand-orange data-[state=active]:text-white data-[state=active]:shadow-md transition-all text-slate-500 hover:text-brand-black">Amenities</TabsTrigger>}
-//                     {hasSpecs && <TabsTrigger value="flat360" className="rounded-full px-8 py-3 text-sm font-bold uppercase tracking-wider data-[state=active]:bg-brand-orange data-[state=active]:text-white data-[state=active]:shadow-md transition-all text-slate-500 hover:text-brand-black">Specifications</TabsTrigger>}
-//                     {hasFloorPlan && <TabsTrigger value="live" className="rounded-full px-8 py-3 text-sm font-bold uppercase tracking-wider data-[state=active]:bg-brand-orange data-[state=active]:text-white data-[state=active]:shadow-md transition-all text-slate-500 hover:text-brand-black">Floor Plans</TabsTrigger>}
-//                   </TabsList>
-//                 </div>
-
-//                 <TabsContent value="ammenties" className="m-0">
-//                   <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 ${glassCard} p-6 md:p-8 bg-white`}>
-//                     <div className="rounded-[2rem] overflow-hidden shadow-md">
-//                        <img src={projectData?.flat_details?.amenities?.images?.[0]} alt="Amenity View" className="w-full h-full min-h-[400px] object-cover hover:scale-105 transition-transform duration-700" />
-//                     </div>
-//                     <div className="p-4 md:p-8">
-//                       <Accordion type="single" collapsible className="w-full">
-//                         {projectData?.flat_details?.amenities?.bulleting?.map((amenity: any, i: number) => (
-//                           <AccordionItem key={i} value={`amenity-${i}`} className="border-b border-slate-100 last:border-none">
-//                             <AccordionTrigger className="text-left font-bold text-lg md:text-xl text-brand-black hover:text-brand-orange hover:no-underline py-6">
-//                               {amenity.title}
-//                             </AccordionTrigger>
-//                             <AccordionContent className="text-slate-600 leading-relaxed pb-6">
-//                               <ul className="list-disc pl-5 space-y-3">
-//                                 {amenity.points?.map((pt: string, j: number) => pt ? <li key={j}>{pt}</li> : null)}
-//                               </ul>
-//                             </AccordionContent>
-//                           </AccordionItem>
-//                         ))}
-//                       </Accordion>
-//                     </div>
-//                   </div>
-//                 </TabsContent>
-
-//                 <TabsContent value="flat360" className="m-0">
-//                   <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 ${glassCard} p-6 md:p-8 bg-white`}>
-//                      <div className="flex flex-col gap-6">
-//                        {projectData?.flat_details?.specification?.top_image && (
-//                          <div className="rounded-[2rem] overflow-hidden shadow-md border border-slate-100"><img src={projectData.flat_details.specification.top_image} className="w-full object-cover" alt="Spec" /></div>
-//                        )}
-//                        {projectData?.flat_details?.specification?.bottom_image && (
-//                          <div className="rounded-[2rem] overflow-hidden shadow-md border border-slate-100 w-3/4 self-end"><img src={projectData.flat_details.specification.bottom_image} className="w-full object-cover" alt="Spec" /></div>
-//                        )}
-//                      </div>
-//                      <div className="p-4 md:p-8">
-//                       <Accordion type="single" collapsible className="w-full">
-//                         {projectData?.flat_details?.specification?.bulleting?.map((spec: any, i: number) => (
-//                           <AccordionItem key={i} value={`spec-${i}`} className="border-b border-slate-100 last:border-none">
-//                             <AccordionTrigger className="text-left font-bold text-lg text-brand-black hover:text-brand-orange hover:no-underline py-6">
-//                               {spec.title}
-//                             </AccordionTrigger>
-//                             <AccordionContent className="text-slate-600 leading-relaxed pb-6">
-//                               <ul className="list-disc pl-5 space-y-3">
-//                                 {spec.points?.map((pt: string, j: number) => pt ? <li key={j}>{pt}</li> : null)}
-//                               </ul>
-//                             </AccordionContent>
-//                           </AccordionItem>
-//                         ))}
-//                       </Accordion>
-//                     </div>
-//                   </div>
-//                 </TabsContent>
-
-//                 <TabsContent value="live" className="m-0">
-//                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-//                      {projectData?.flat_details?.isometric_view?.media?.map((plan: string, i: number) => (
-//                        <div key={i} className="bg-white rounded-[2.5rem] shadow-sm border border-slate-100 p-6 cursor-pointer group flex items-center justify-center relative overflow-hidden" onClick={() => { setFloorImg(plan); setFloorModalVisible(true); }}>
-//                          <img src={plan} alt={`Floor Plan ${i}`} className="w-full object-contain transition-transform duration-500 group-hover:scale-105" />
-//                          <div className="absolute inset-0 bg-white/40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-//                             <span className={`${pillButton} bg-brand-orange text-white shadow-lg`}>View Plan</span>
-//                          </div>
-//                        </div>
-//                      ))}
-//                    </div>
-//                 </TabsContent>
-//               </Tabs>
-//             </div>
-//           );
-//         })()}
-
-//         {/* ========================================= */}
-//         {/* SECTION 5: NEIGHBORHOOD MAP               */}
-//         {/* ========================================= */}
-//         {(projectData?.maps?.[0] || projectData?.location_in_map) && (
-//           <div className={`mt-12 fade-up ${glassCard} p-6 md:p-8 bg-white`}>
-//             <h2 className="text-sm font-bold uppercase tracking-widest text-brand-orange mb-8 pl-4">Neighborhood Map</h2>
-//             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-
-//               <div className="lg:col-span-8 rounded-[2rem] overflow-hidden shadow-inner border border-slate-100 h-[500px]">
-//                  <iframe src={projectData.location_in_map} className="w-full h-full border-0" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
-//               </div>
-
-//               {projectData?.maps?.[0] && (
-//                 <div className="lg:col-span-4 p-4 flex flex-col">
-//                    <div className="flex gap-3 border-b border-slate-100 pb-6 mb-6 overflow-x-auto custom-scrollbar">
-//                       {projectData.maps.map((locType: any, i: number) => (
-//                         <button key={i} onClick={() => mapLocationSelect(locType.type)} className={`flex-shrink-0 ${pillButton} border ${location === locType.type ? 'bg-brand-orange border-brand-orange text-white shadow-md' : 'bg-white border-slate-200 text-slate-600 hover:border-brand-orange hover:text-brand-orange'}`}>
-//                           {locType.type}
-//                         </button>
-//                       ))}
-//                    </div>
-
-//                    <div className="flex justify-between text-xs font-bold text-slate-400 mb-6 uppercase tracking-wider px-2">
-//                       <span>{locationData?.title}</span>
-//                       <span>Distance</span>
-//                    </div>
-
-//                    <div className="space-y-0 overflow-y-auto custom-scrollbar flex-1 px-2">
-//                      {locationData?.locations?.map((mapItem: any, i: number) => (
-//                         <div key={i} className="flex justify-between items-center text-sm border-b border-slate-50 py-4 group hover:bg-slate-50 rounded-xl px-3 transition-colors">
-//                           <span className="text-slate-700 font-medium">{mapItem.location_name}</span>
-//                           <span className="font-mono bg-white border border-slate-100 shadow-sm text-brand-orange px-3 py-1 rounded-full text-xs font-bold">{mapItem.distance}</span>
-//                         </div>
-//                      ))}
-//                    </div>
-//                 </div>
-//               )}
-//             </div>
-//           </div>
-//         )}
-
-//         {/* ========================================= */}
-//         {/* SECTION 6: DOCUMENTS TABLE                */}
-//         {/* ========================================= */}
-//         {projectData?.apartment_document?.length > 0 && (
-//           <div className="mt-12 fade-up">
-//             <h2 className="text-sm font-bold uppercase tracking-widest text-brand-orange mb-8 pl-4">Downloads</h2>
-//             <div className="flex flex-col gap-4">
-//               {projectData.apartment_document.map((document: any, i: number) => (
-//                 <div key={i} className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-white border border-slate-100 shadow-sm p-6 rounded-[2rem] hover:shadow-md transition-shadow">
-//                   <p className="font-bold text-lg text-brand-black pl-2">{document.title}</p>
-//                   <div className="flex gap-3">
-//                     <button onClick={() => handleDocumentDownload(document.location)} className={`${pillButton} bg-white border border-slate-200 text-slate-600 hover:border-brand-orange hover:text-brand-orange`}>
-//                       Open
-//                     </button>
-//                     <button onClick={() => handleDocumentDownload(document.location)} className={`${pillButton} bg-brand-orange border border-brand-orange text-white shadow-md hover:bg-brand-black hover:border-brand-black`}>
-//                       Download
-//                     </button>
-//                   </div>
-//                 </div>
-//               ))}
-//             </div>
-//           </div>
-//         )}
-//       </div>
-
-//       {/* ========================================= */}
-//       {/* FRESH PILL DIALOGS                        */}
-//       {/* ========================================= */}
-//       <Dialog open={modalVisible} onOpenChange={setModalVisible}>
-//         <DialogContent className="max-w-7xl w-[95vw] bg-white/80 backdrop-blur-3xl border border-white shadow-2xl p-4 rounded-[2.5rem]">
-//            <div className="relative flex justify-center items-center w-full h-[80vh] rounded-[2rem] overflow-hidden bg-slate-50 p-4">
-//               <img src={modalImg} alt="Gallery Focus" className="max-w-full max-h-full object-contain rounded-2xl shadow-sm" />
-//            </div>
-//         </DialogContent>
-//       </Dialog>
-
-//       <Dialog open={floorModalVisible} onOpenChange={setFloorModalVisible}>
-//         <DialogContent className="max-w-5xl w-[95vw] bg-white/80 backdrop-blur-3xl border border-white shadow-2xl p-4 rounded-[2.5rem]">
-//            <div className="flex justify-center items-center w-full h-[80vh] rounded-[2rem] overflow-hidden bg-slate-50 p-8">
-//               <img src={floorImg} alt="Floor Plan Focus" className="max-w-full max-h-full object-contain" />
-//            </div>
-//         </DialogContent>
-//       </Dialog>
-
-//     </div>
-//   );
-// }
 
 "use client";
 
@@ -1240,6 +32,160 @@ if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
 
+
+// interface ProjectData {
+//   flat_details?: {
+//     amenities?: {
+//       images?: string[];
+//     };
+//   };
+// }
+// export interface Certifications {
+//   certified_by?: string[];
+//   description?: string;
+//   description_logo?: string;
+//   qr_images?: string[];
+// }
+// export interface FlatDetails {
+// 	amenities: Amenities;
+// 	specification: Specification;
+// 	isometric_view: IsometricView;
+// }
+// export interface Amenities {
+// 	images: string[];
+// 	bulleting: Bulleting[];
+// }
+
+
+// export interface Bulleting {
+// 	title: string;
+// 	points: string[];
+// }
+
+// export interface Specification {
+// 	top_image: string;
+// 	bottom_image: string;
+// 	bulleting: Bulleting[];
+// }
+
+// export interface IsometricView {
+// 	media: string[];
+// }
+
+
+// export interface ProjectData {
+//   flat_details?: {
+//     amenities?: {
+//       images?: string[];
+//       bulleting?: {
+//         title: string;
+//         points: string[];
+//       }[];
+//     };
+//     specification?: {
+//       bulleting?: {
+//         title: string;
+//         points: string[];
+//       }[];
+//     };
+//     isometric_view?: {
+//       media?: string[];
+//     };
+//   };
+
+//   certification?: {
+//     qr_images?: string[];
+//     certified_by?: string[];
+//     description?: string;
+//     description_logo?: string;
+//   };
+// }
+
+export interface ProjectData {
+  flat_details?: FlatDetails;
+  certification?: Certification;
+  gallery_medias?: string[];
+  apt_type?: string[];
+  layout?: string;
+  apartment_document?: ApartmentDocument[];
+  // maps?: MapSection[];
+  meta_tags?: MetaTag[];
+  title?: string;
+  sub_title?: string;
+  description?: string;
+  title_image?: string[];
+  tech_stack?: string;
+  entries?: string;
+  tags?: string;
+  city_name?: string;
+  flat_view?: string;
+}
+
+export interface FlatDetails {
+  amenities?: Amenities;
+  specification?: Specification;
+  isometric_view?: IsometricView;
+}
+
+export interface Amenities {
+  images?: string[];
+  bulleting?: Bulleting[];
+}
+
+export interface Specification {
+  top_image?: string;
+  bottom_image?: string;
+  bulleting?: Bulleting[];
+}
+
+export interface Bulleting {
+  title: string;
+  points: string[];
+}
+
+export interface Certification {
+  certified_by?: string[];
+  description?: string;
+  description_logo?: string;
+  qr_images?: string[];
+}
+
+export interface IsometricView {
+  media?: string[];
+}
+
+export interface ApartmentDocument {
+  title: string;
+  location: string;
+}
+
+export interface MetaTag {
+  key: string;
+  tag: string;
+}
+
+export enum LocationType {
+  School = "School",
+  Hospital = "Hospital",
+  IT = "IT",
+  Malls = "Malls",
+  Others = "Others",
+  Park = "Park",
+}
+
+export interface MapEntry {
+  distance?: string;
+  location_name?: string;
+}
+
+export interface MapSet {
+  type: LocationType;
+  title?: string;
+  locations?: MapEntry[];
+}
+
+
+
 const splitParagraphIntoSentences = (paragraph: string): string[] => {
   if (!paragraph) return [];
   return paragraph.split(/[.?]/).filter((sentence) => sentence.trim() !== "");
@@ -1250,16 +196,27 @@ if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
 
+
+// export default function ProjectDetailClient({
+//   projectData,
+// }: {
+//   projectData: any;
+// })
+
+
 export default function ProjectDetailClient({
   projectData,
 }: {
-  projectData: any;
+  projectData: ProjectData;
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
+
+
 
   const [locationData, setLocationData] = useState<any>(
     projectData?.maps?.length > 0 ? projectData.maps[0] : null,
   );
+
   const [location, setLocation] = useState<string>(
     projectData?.maps?.length > 0 ? projectData.maps[0].type : "School",
   );
@@ -1339,7 +296,9 @@ const uniqueCategories = ["All", "Sample Flat", "Club House", "Indoor", "Outdoor
 // 4. Filter images based on selected tab
 const filteredGallery = activeCategory === "All" 
   ? galleryItems 
-  : galleryItems.filter(item => item.category === activeCategory);
+  : galleryItems.filter((item: any) => item.category === activeCategory);
+
+  // galleryItems.filter((item: any) => item.category === activeCategory);
 
 // 5. Modal Navigation Handlers
 const nextGalleryImage = (e: any) => {
@@ -1543,7 +502,7 @@ useEffect(() => {
         </div>
 
         <AnimatePresence mode="popLayout" initial={false}>
-          {projectData?.title_image?.length > 0 && (
+          {(projectData?.title_image?.length ?? 0) > 0  && (
             <motion.img
               key={activeIndex}
               src={projectData.title_image[activeIndex]}
@@ -1598,7 +557,7 @@ useEffect(() => {
         </motion.div>
 
         {/* Premium Pill Indicators */}
-        {projectData?.title_image?.length > 1 && (
+        {(projectData?.title_image?.length ?? 1) > 1  && (
           <div className="flex gap-2 sm:gap-3 items-center bg-black/40 md:bg-white/10 backdrop-blur-xl border border-white/20 px-5 py-3 lg:px-6 lg:py-4 rounded-full shadow-2xl w-full lg:w-auto justify-center lg:justify-start pointer-events-auto">
             {projectData.title_image.map((_: any, index: any) => (
               <button
@@ -1784,15 +743,15 @@ useEffect(() => {
 
           {/* Enlarge QR Images (ALWAYS CENTERED) */}
           <div className="flex flex-wrap justify-center gap-6">
-            {projectData.certification.qr_images.map((qrImage: any, i: any) => (
-              <div 
-                key={i} 
+            {projectData.certification.qr_images.map((qrImage:string, i: number) => (
+              <div
+                key={i}
                 className="flex-shrink-0 bg-white dark:bg-zinc-100 p-2 rounded-xl shadow-sm border border-gray-200"
               >
-                <img 
-                  src={qrImage} 
-                  alt="QR Code Verification" 
-                  className="w-32 h-32 md:w-44 md:h-44 object-contain" 
+                <img
+                  src={qrImage}
+                  alt="QR Code Verification"
+                  className="w-32 h-32 md:w-44 md:h-44 object-contain"
                 />
               </div>
             ))}
@@ -1890,9 +849,9 @@ useEffect(() => {
   const availableTabs = [];
   
   if (flatView.terrace_view_360 && projectTitle === "Kumar Parc Residences") {
-    availableTabs.push({ 
-      id: "terrace360", 
-      label: "Terrace 360°", 
+    availableTabs.push({
+      id: "terrace360",
+      label: "Terrace 360°",
       src: flatView.terrace_view_360,
       caption: `${projectTitle} Terrace View`
     });
@@ -2167,30 +1126,31 @@ useEffect(() => {
     
     {/* 
       REMOVED `mode="popLayout"`:
-      This ensures the images perfectly stack on top of each other during the crossfade 
+      This ensures the images perfectly stack on top of each other during the crossfade
       without causing a layout recalculation (the "jerk").
     */}
     <AnimatePresence>
-      {projectData?.flat_details?.amenities?.images?.length > 0 && (
-        <motion.img
-          key={amenityImgIndex}
-          src={projectData.flat_details.amenities.images[amenityImgIndex]}
-          alt={`Amenity view ${amenityImgIndex + 1}`}
-          // Simplified to a clean, layout-safe crossfade
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1, ease: "easeInOut" }}
-          className="absolute inset-0 w-full h-full object-cover object-center"
-        />
-      )}
+      {(projectData?.flat_details?.amenities?.images?.length ?? 0) > 0 && (
+  <motion.img
+    key={amenityImgIndex}
+    src={
+      projectData?.flat_details?.amenities?.images?.[amenityImgIndex] ?? ""
+    }
+    alt={`Amenity view ${amenityImgIndex + 1}`}
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    transition={{ duration: 1, ease: "easeInOut" }}
+    className="absolute inset-0 w-full h-full object-cover object-center"
+  />
+)}
     </AnimatePresence>
 
     {/* Subtle gradient overlay to make indicators pop */}
     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent pointer-events-none" />
 
     {/* Premium Animated Progress Bar */}
-    {projectData?.flat_details?.amenities?.images?.length > 1 && (
+    {(projectData?.flat_details?.amenities?.images?.length ?? 1) > 1 && (
       <div className="absolute bottom-0 left-0 right-0 h-1.5 bg-white/20 backdrop-blur-sm z-30">
         <motion.div
           key={amenityImgIndex}
@@ -2203,10 +1163,10 @@ useEffect(() => {
     )}
 
     {/* Gallery Pill Indicators */}
-    {projectData?.flat_details?.amenities?.images?.length > 1 && (
+    {(projectData?.flat_details?.amenities?.images?.length ?? 1) > 1 && (
       <div className="absolute bottom-8 left-0 right-0 flex justify-center z-20 pointer-events-auto">
         <div className="flex gap-2 items-center bg-black/40 backdrop-blur-xl border border-white/20 px-4 py-2.5 rounded-full shadow-2xl">
-          {projectData.flat_details.amenities.images.map((_, index) => (
+          {projectData?.flat_details?.amenities?.images.map((_, index) => (
             <button
               key={index}
               onClick={() => setAmenityImgIndex(index)}
@@ -2229,7 +1189,7 @@ useEffect(() => {
 </div>
 
         {/* Gallery Pill Indicators */}
-        {projectData?.flat_details?.amenities?.images?.length > 1 && (
+        {( projectData?.flat_details?.amenities?.images?.length ?? 1) > 1 && (
           <div className="absolute bottom-8 left-0 right-0 flex justify-center z-20 pointer-events-auto">
             <div className="flex gap-2 items-center bg-black/40 backdrop-blur-xl border border-white/20 px-4 py-2.5 rounded-full shadow-2xl">
               {projectData.flat_details.amenities.images.map((_, index) => (
@@ -2329,132 +1289,7 @@ useEffect(() => {
   </div>
 </TabsContent>
           
-       {/* <TabsContent value="ammenties" className="m-0 focus-visible:outline-none">
-  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start mt-6 md:mt-10">
-    
-    <div className="lg:col-span-5 lg:sticky lg:top-32 relative group">
-      
-      <div className="relative w-full aspect-[4/3] md:aspect-[4/5] rounded-[2rem] md:rounded-[2.5rem] overflow-hidden shadow-2xl bg-white/40 dark:bg-white/10 backdrop-blur-2xl border border-white/50 dark:border-white/20 p-2 md:p-3">
-        
-        <div className="relative w-full h-full rounded-[1.5rem] md:rounded-[2rem] overflow-hidden bg-black">
-          <AnimatePresence mode="popLayout" initial={false}>
-            {projectData?.flat_details?.amenities?.images?.length > 0 && (
-              <motion.img
-                key={amenityImgIndex}
-                src={projectData.flat_details.amenities.images[amenityImgIndex]}
-                alt={`Amenity view ${amenityImgIndex + 1}`}
-                initial={{ opacity: 0, scale: 1.05 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 1.2, ease: "easeInOut" }}
-                className="absolute inset-0 w-full h-full object-cover object-center"
-              />
-            )}
-          </AnimatePresence>
-
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
-        </div>
-
-        {projectData?.flat_details?.amenities?.images?.length > 1 && (
-          <div className="absolute bottom-6 left-0 right-0 flex justify-center z-20 pointer-events-auto">
-            <div className="flex gap-2 items-center bg-black/40 backdrop-blur-xl border border-white/20 px-4 py-2.5 rounded-full shadow-2xl">
-              {projectData.flat_details.amenities.images.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setAmenityImgIndex(index)}
-                  className="relative h-1.5 w-8 bg-white/30 rounded-full overflow-hidden transition-all hover:bg-white/60"
-                  aria-label={`View image ${index + 1}`}
-                >
-                  {amenityImgIndex === index && (
-                    <motion.div
-                      layoutId="amenityIndicator"
-                      className="absolute top-0 left-0 h-full w-full bg-brand-orange rounded-full shadow-[0_0_10px_rgba(245,130,32,0.8)]"
-                    />
-                  )}
-                </button>
-              ))}
-            </div>
-          </div>
-        )}
-
-      </div>
-    </div>
-
-
-    
-
-      <div className="bg-white/40 dark:bg-white/5 backdrop-blur-2xl rounded-[2rem] md:rounded-[2.5rem] p-6 sm:p-8 md:p-12 shadow-[0_20px_60px_rgb(0,0,0,0.05)] border border-white/60 dark:border-white/10">
-        
-        <div className="mb-8 md:mb-12">
-          <span className="special-text text-brand-orange text-sm md:text-base mb-2 block">
-            Lifestyle
-          </span>
-          <h3 className="text-2xl md:text-3xl lg:text-4xl font-black uppercase text-brand-black dark:text-white tracking-tight">
-            World-Class Facilities
-          </h3>
-          <div className="h-1 w-12 bg-brand-orange mt-5 rounded-full"></div>
-        </div>
-
-        <Accordion type="single" collapsible className="w-full">
-          {projectData?.flat_details?.amenities?.bulleting?.map((amenity, i) => {
-            
-            // LOGIC: Check if sub-points exist and have length
-            const hasSubPoints = amenity.points && amenity.points.filter(pt => pt).length > 0;
-
-            if (hasSubPoints) {
-              // RENDER: Collapsible Accordion (If it has points)
-              return (
-                <AccordionItem 
-                  key={i} 
-                  value={`amenity-${i}`} 
-                  className="border-b border-gray-200/50 dark:border-zinc-800 last:border-none py-2"
-                >
-                  <AccordionTrigger className="text-left font-bold text-lg md:text-xl text-zinc-800 dark:text-zinc-200 hover:text-brand-orange dark:hover:text-brand-orange transition-colors hover:no-underline [&[data-state=open]]:text-brand-orange py-4">
-                    {amenity.title}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-zinc-600 dark:text-zinc-400 font-light leading-relaxed pt-2 pb-6">
-                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-8 mt-2">
-                      {amenity.points.map((pt, j) => pt ? (
-                        <li key={j} className="flex items-start group/item">
-                          <span className="mr-3 text-brand-orange flex-shrink-0 mt-1.5 transition-transform group-hover/item:scale-125">
-                            <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
-                              <circle cx="7" cy="7" r="4" fill="currentColor"/>
-                              <circle cx="7" cy="7" r="6.5" stroke="currentColor" strokeOpacity="0.4"/>
-                            </svg>
-                          </span>
-                          <span className="text-sm md:text-base font-medium">{pt}</span>
-                        </li>
-                      ) : null)}
-                    </ul>
-                  </AccordionContent>
-                </AccordionItem>
-              );
-            } else {
-              // RENDER: Static Glass List Item (If NO points exist)
-              return (
-                <div 
-                  key={i} 
-                  className="border-b border-gray-200/50 dark:border-zinc-800 last:border-none py-6 flex items-center group/static"
-                >
-                  <span className="mr-4 text-brand-orange transition-transform group-hover/static:scale-125">
-                    <svg width="16" height="16" viewBox="0 0 14 14" fill="none">
-                      <circle cx="7" cy="7" r="4" fill="currentColor"/>
-                      <circle cx="7" cy="7" r="6.5" stroke="currentColor" strokeOpacity="0.4"/>
-                    </svg>
-                  </span>
-                  <span className="text-left font-bold text-lg md:text-xl text-zinc-800 dark:text-zinc-200 group-hover/static:text-brand-orange transition-colors">
-                    {amenity.title}
-                  </span>
-                </div>
-              );
-            }
-          })}
-        </Accordion>
-      </div>
-    </div>
-
-  </div>
-</TabsContent>  */}
+       
 
           {/* SPECIFICATIONS CONTENT */}
          
@@ -2463,10 +1298,7 @@ useEffect(() => {
     
     {/* ========================================= */}
     {/* LEFT COLUMN: Editorial Overlapping Images */}
-    {/* ========================================= */}
-    {/* ========================================= */}
-{/* LEFT COLUMN: Editorial Overlapping Images */}
-{/* ========================================= */}
+ 
 <div className="lg:col-span-5 lg:sticky lg:top-32 relative">
   
   {/* 
@@ -2482,8 +1314,7 @@ useEffect(() => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        // SIZE INCREASED: Now takes up 95% on mobile, 90% on desktop.
-        // This leaves exactly 10% empty space on the right for the overlap.
+       
         className="w-[95%] md:w-[90%] aspect-[543/751] rounded-[2rem] md:rounded-[2.5rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.15)] relative z-10 group"
       >
         <img
@@ -2502,16 +1333,8 @@ useEffect(() => {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-        // Position wrapper: right-0 and translate-y-[50%] creates the corner overlap.
-        // SIZE INCREASED: Now w-[65%] on mobile, w-[60%] on desktop.
         className="absolute right-0 bottom-0 translate-y-[50%] w-[65%] md:w-[60%] z-20"
       >
-        {/* 
-          FIXED ANIMATION: 
-          The infinite float is now applied to the wrapper that contains 
-          the `overflow-hidden` mask. The frame and image move together, 
-          so no white background is ever exposed!
-        */}
         <motion.div
           animate={{ y: [0, -15, 0] }}
           transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
@@ -2549,7 +1372,7 @@ useEffect(() => {
         </div>
 
         <Accordion type="single" collapsible className="w-full">
-          {projectData?.flat_details?.specification?.bulleting?.map((spec, i) => {
+          {projectData?.flat_details?.specification?.bulleting?.map((spec:Bulleting, i:number) => {
             
             const hasSubPoints = spec.points && spec.points.filter(pt => pt).length > 0;
 
@@ -2565,7 +1388,7 @@ useEffect(() => {
                   </AccordionTrigger>
                   <AccordionContent className="text-zinc-600 dark:text-zinc-400 font-light leading-relaxed pt-2 pb-6">
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-8 mt-2">
-                      {spec.points.map((pt, j) => pt ? (
+                      {spec.points.map((pt, j:number) => pt ? (
                         <li key={j} className="flex items-start group/item">
                           <span className="mr-3 text-brand-orange flex-shrink-0 mt-1.5 transition-transform group-hover/item:scale-125">
                             {/* Custom Dot-Ring SVG */}
@@ -2607,14 +1430,9 @@ useEffect(() => {
   </div>
 </TabsContent>
 
-          {/* FLOOR PLAN CONTENT */}
-          {/* ========================================= */}
-{/* FLOOR PLAN CONTENT (Grid Gallery)         */}
-{/* ========================================= */}
 
-{/* ========================================= */}
 {/* FLOOR PLAN CONTENT (Grid Gallery)         */}
-{/* ========================================= */}
+
 <TabsContent value="live" className="m-0 focus-visible:outline-none">
   <div className="mt-8 md:mt-12">
     
@@ -2631,7 +1449,7 @@ useEffect(() => {
 
     {/* The Gallery Grid */}
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
-      {projectData?.flat_details?.isometric_view?.media?.map((plan: any, i: any) => (
+      {projectData?.flat_details?.isometric_view?.media?.map((plan: string, i: number) => (
         <motion.div
           key={i}
           initial={{ opacity: 0, y: 20 }}
@@ -2654,7 +1472,6 @@ useEffect(() => {
               className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
             />
             
-            {/* NEW: Vibrant Orange Glass Overlay (No more black) */}
             <div className="absolute inset-0 bg-brand-orange/5 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
               <div className="flex items-center gap-2 bg-brand-orange text-white font-bold uppercase tracking-widest text-xs px-6 py-3 rounded-full shadow-[0_10px_20px_rgba(245,130,32,0.4)] transform translate-y-8 group-hover:translate-y-0 transition-all duration-500">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -2665,7 +1482,6 @@ useEffect(() => {
             </div>
           </div>
 
-          {/* Integrated Caption */}
           <div className="mt-6 flex flex-col items-center text-center px-4">
             <span className="text-brand-orange font-bold text-xs uppercase tracking-[0.2em] mb-1">
               Configuration {i + 1}
@@ -2887,7 +1703,7 @@ useEffect(() => {
     </motion.div>
   )}
 </AnimatePresence>
-          {/* <TabsContent value="live" className="m-0 focus-visible:outline-none">
+          <TabsContent value="live" className="m-0 focus-visible:outline-none">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
               {projectData?.flat_details?.isometric_view?.media?.map((plan, i) => (
                 <div
@@ -2911,7 +1727,7 @@ useEffect(() => {
                 </div>
               ))}
             </div>
-          </TabsContent> */}
+          </TabsContent>
 
         </div>
       </Tabs>
@@ -2919,115 +1735,7 @@ useEffect(() => {
   );
 })()}
 
-     {/* ========================================= */}
-{/* ADVANCED CONNECTIVITY HUB                 */}
-{/* ========================================= */}
-{/* {(projectData?.maps?.[0] || projectData?.location_in_map) && (
-  <section className="relative z-20 w-full bg-[#f8fafc] dark:bg-zinc-950 py-8 md:py-12 overflow-hidden">
-    
-    <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[40vw] h-[40vw] bg-brand-orange/5 blur-[120px] rounded-full pointer-events-none" />
-
-    <div className="relative z-10 max-w-[1920px] mx-auto px-4 sm:px-6 md:px-12 lg:px-24">
-      
-      <div className="flex flex-col items-center text-center mb-6 md:mb-10">
-        <span className="special-text text-brand-orange text-sm md:text-lg mb-1 flex items-center gap-2">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="animate-[spin_4s_linear_infinite]">
-            <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>
-          </svg>
-          Prime Connectivity
-        </span>
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black uppercase text-brand-black dark:text-white tracking-tight">
-          Neighborhood Map
-        </h2>
-        <div className="h-1 w-12 md:w-16 bg-brand-orange mt-3 md:mt-4 rounded-full shadow-[0_0_15px_rgba(245,130,32,0.4)]"></div>
-      </div>
-
-      <div className="grid grid-cols-1 lg:grid-cols-12 rounded-[2rem] md:rounded-[2.5rem] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.05)] border border-white dark:border-zinc-800 bg-white/60 dark:bg-zinc-900/60 backdrop-blur-2xl">
-        
-        <div className="lg:col-span-7 xl:col-span-8 h-[350px] sm:h-[450px] lg:h-[600px] relative bg-gray-100 dark:bg-zinc-950">
-          <iframe
-            src={projectData.location_in_map}
-            // Crisp, high-contrast map that pops into full color on hover
-            className="absolute inset-0 w-full h-full border-0 grayscale-[15%] opacity-90 hover:grayscale-0 hover:opacity-100 transition-all duration-700"
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
-          <div className="absolute inset-0 shadow-[inset_0_0_40px_rgba(0,0,0,0.1)] pointer-events-none" />
-        </div>
-        
-        {projectData?.maps?.[0] && (
-          <div className="lg:col-span-5 xl:col-span-4 bg-white/80 dark:bg-zinc-900/80 p-5 sm:p-6 md:p-8 flex flex-col h-full border-l border-gray-100 dark:border-zinc-800 relative z-10">
-            
-            <div className="w-full overflow-x-auto [-ms-overflow-style:'none'] [scrollbar-width:'none'] [&::-webkit-scrollbar]:hidden mb-5 md:mb-6 border-b border-gray-200 dark:border-zinc-800 pb-4">
-              <div className="flex gap-2 w-max">
-                {projectData.maps.map((locType, i) => (
-                  <button
-                    key={i}
-                    onClick={() => mapLocationSelect(locType.type)}
-                    className="relative px-4 py-2 md:px-5 md:py-2.5 rounded-full text-[10px] md:text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-zinc-400 data-[state=active]:text-white transition-colors duration-300 outline-none"
-                    data-state={location === locType.type ? "active" : "inactive"}
-                  >
-                    {location === locType.type && (
-                      <motion.div
-                        layoutId="map-category-active-light"
-                        className="absolute inset-0 bg-brand-orange rounded-full -z-10 shadow-[0_4px_15px_rgba(245,130,32,0.3)]"
-                        transition={{ type: "spring", bounce: 0.15, duration: 0.5 }}
-                      />
-                    )}
-                    <span className="relative z-10">{locType.type}</span>
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            <div className="flex justify-between items-end mb-4 px-1">
-              <div className="flex items-center gap-3">
-                <div className="relative flex h-3 w-3">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-orange opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-3 w-3 bg-brand-orange"></span>
-                </div>
-                <h4 className="font-black text-lg md:text-xl text-brand-black dark:text-white uppercase tracking-tight">
-                  {locationData?.title || "Key Landmarks"}
-                </h4>
-              </div>
-              <span className="text-brand-orange text-[10px] md:text-xs font-bold uppercase tracking-widest bg-brand-orange/10 px-2 py-1 rounded-md">
-                Distance
-              </span>
-            </div>
-
-            <div className="space-y-2 flex-grow max-h-[300px] lg:max-h-full overflow-y-auto pr-3 [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-gray-100 dark:[&::-webkit-scrollbar-track]:bg-zinc-800 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-thumb]:bg-zinc-600 [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-brand-orange/50 transition-colors">
-              {locationData?.locations?.map((mapItem, i) => (
-                <div
-                  key={i}
-                  className="group flex justify-between items-center p-3 md:p-4 rounded-xl md:rounded-2xl bg-gray-50/50 dark:bg-zinc-800/50 hover:bg-white dark:hover:bg-zinc-800 hover:shadow-[0_10px_30px_rgba(0,0,0,0.06)] border border-gray-100 dark:border-zinc-700 hover:border-brand-orange/20 transition-all duration-300"
-                >
-                  <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 shrink-0 rounded-full bg-white dark:bg-zinc-900 shadow-sm flex items-center justify-center text-gray-400 group-hover:bg-brand-orange group-hover:text-white group-hover:shadow-[0_4px_10px_rgba(245,130,32,0.4)] transition-all duration-300 group-hover:-translate-y-0.5">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                        <circle cx="12" cy="10" r="3"></circle>
-                      </svg>
-                    </div>
-                    <span className="font-bold text-xs md:text-sm text-zinc-700 dark:text-zinc-200 group-hover:text-brand-orange transition-colors duration-300 line-clamp-1">
-                      {mapItem.location_name}
-                    </span>
-                  </div>
-                  
-                  <span className="font-mono text-[10px] md:text-xs font-bold bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-700 text-zinc-500 group-hover:bg-brand-orange/10 group-hover:border-brand-orange/30 group-hover:text-brand-orange px-2.5 py-1.5 rounded-md md:rounded-lg transition-all duration-300 whitespace-nowrap ml-2 shadow-sm">
-                    {mapItem.distance}
-                  </span>
-                </div>
-              ))}
-            </div>
-            
-          </div>
-        )}
-      </div>
-      
-    </div>
-  </section>
-)} */}
+  
 
 {/* ========================================= */}
 {/* CATEGORIZED PROJECT GALLERY               */}
@@ -3399,22 +2107,18 @@ useEffect(() => {
   </section>
 )}
 
-        {/* DOCUMENTS & CREDITS SECTION */}
-        {/* ========================================= */}
+      
 {/* DOCUMENTS & CREDITS (TECHNICAL LEDGER)    */}
-{/* ========================================= */}
-{/* ========================================= */}
-{/* DOCUMENTS & CREDITS (TECHNICAL LEDGER)    */}
-{/* ========================================= */}
-{(projectData?.apartment_document?.length > 0 || projectData?.tech_stack?.entries?.length > 0) && (
+
+{((projectData?.apartment_document?.length ?? 0) > 0 || (projectData?.tech_stack?.entries?.length ?? 0) >0) && (
   <section className="relative w-full bg-[var(--color-brand-cream)] dark:bg-[#0a0a0a] py-16 md:py-24 border-t border-gray-200 dark:border-zinc-900">
     <div className="max-w-[1920px] mx-auto px-4 sm:px-6 md:px-12 lg:px-24">
       
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
         
         {/* LEFT: Legal & Documents */}
-        {projectData?.apartment_document?.length > 0 && (
-          <div className={`lg:col-span-${projectData?.tech_stack?.entries?.length > 0 ? "7 lg:border-r lg:border-gray-200 dark:lg:border-zinc-800 lg:pr-20" : "12"}`}>
+        {(projectData?.apartment_document?.length ?? 0 ) > 0 && (
+          <div className={`lg:col-span-${(projectData?.tech_stack?.entries?.length ?? 0) > 0 ? "7 lg:border-r lg:border-gray-200 dark:lg:border-zinc-800 lg:pr-20" : "12"}`}>
             
             {/* Advanced Header (Matching Neighborhood Connectivity) */}
             <div className="mb-10 md:mb-14">
@@ -3429,7 +2133,7 @@ useEffect(() => {
 
             {/* Document Ledger List */}
             <div className="flex flex-col border-t border-gray-200 dark:border-zinc-800">
-              {projectData.apartment_document.map((document: any, i: any) => (
+              { projectData.apartment_document?.map((document: any, i: any) => (
                 <div
                   key={i}
                   className="group relative flex flex-col sm:flex-row sm:items-center justify-between gap-4 py-5 border-b border-gray-200 dark:border-zinc-800 transition-colors duration-300 hover:bg-gray-50/50 dark:hover:bg-zinc-900/30"
@@ -3478,8 +2182,7 @@ useEffect(() => {
           </div>
         )}
 
-        {/* RIGHT: Project Credits */}
-        {projectData?.tech_stack?.entries?.length > 0 && (
+        {(projectData?.tech_stack?.entries?.length ?? 0) > 0 && (
           <div className="lg:col-span-5">
             
             {/* Advanced Header (Matching Neighborhood Connectivity) */}
@@ -3518,6 +2221,40 @@ useEffect(() => {
 
           </div>
         )}
+
+        {/* {(projectData?.tech_stack?.entries?.length ?? 0) > 0 && (
+           <div className="lg:col-span-5">
+
+    <div className="mb-10 md:mb-14">
+      <span className="flex items-center gap-3 text-brand-orange text-xs md:text-sm font-bold tracking-[0.2em] uppercase mb-3">
+        <span className="w-8 h-[2px] bg-brand-orange"></span>
+        The Visionaries
+      </span>
+
+      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-black uppercase text-brand-black dark:text-white tracking-tighter leading-none">
+        Project <br className="hidden lg:block" /> Team
+      </h2>
+    </div>
+
+    <div className="flex flex-col">
+      {entries.map((member: TechStackEntry, i: number) => (
+        <div
+          key={i}
+          className="group flex justify-between items-baseline py-4 border-b border-gray-100 dark:border-zinc-800 last:border-none transition-all duration-300"
+        >
+          <span className="text-xs md:text-sm font-bold text-gray-500 dark:text-zinc-500 uppercase tracking-widest shrink-0">
+            {member.key}
+          </span>
+
+          <span className="text-sm md:text-base font-black text-brand-black dark:text-white text-right group-hover:text-brand-orange transition-colors duration-300">
+            {member.value}
+          </span>
+        </div>
+      ))}
+    </div>
+
+  </div>
+        )} */}
         
       </div>
     </div>
