@@ -1320,7 +1320,7 @@ const [galleryModalOpen, setGalleryModalOpen] = useState(false);
 const [activeCategory, setActiveCategory] = useState("All");
 
 // 2. Smart Data Mapper (Handles both old flat arrays and new categorized APIs)
-const galleryItems = projectData?.gallery_medias?.map((media, index) => {
+const galleryItems = projectData?.gallery_medias?.map((media: any, index: any) => {
   return {
     // If it's a string, use it. If it's an object, get the URL.
     src: typeof media === 'string' ? media : media?.url || media?.src,
@@ -1333,7 +1333,7 @@ const galleryItems = projectData?.gallery_medias?.map((media, index) => {
 
 // 3. Extract unique categories (plus "All")
 const uniqueCategories = ["All", "Sample Flat", "Club House", "Indoor", "Outdoor", "Actual Photos"].filter(
-  (cat) => cat === "All" || galleryItems.some((item) => item.category === cat)
+  (cat) => cat === "All" || galleryItems.some((item: any) => item.category === cat)
 );
 
 // 4. Filter images based on selected tab
@@ -1342,12 +1342,12 @@ const filteredGallery = activeCategory === "All"
   : galleryItems.filter(item => item.category === activeCategory);
 
 // 5. Modal Navigation Handlers
-const nextGalleryImage = (e) => {
+const nextGalleryImage = (e: any) => {
   e.stopPropagation();
   setActiveImageIndex((prev) => (prev + 1) % filteredGallery.length);
 };
 
-const prevGalleryImage = (e) => {
+const prevGalleryImage = (e: any) => {
   e.stopPropagation();
   setActiveImageIndex((prev) => (prev - 1 + filteredGallery.length) % filteredGallery.length);
 };
@@ -1429,9 +1429,9 @@ const prevGalleryImage = (e) => {
   };
 
 
-  const processToWords = (sentences) => {
+  const processToWords = (sentences: any) => {
     if (!sentences || sentences.length === 0) return [];
-    const paragraph = sentences.map((s) => s.trim() + ".").join(" ");
+    const paragraph = sentences.map((s: any) => s.trim() + ".").join(" ");
     return paragraph.split(" ");
   };
 
@@ -1584,7 +1584,7 @@ useEffect(() => {
           {/* Tags */}
           {validTags?.length > 0 && (
             <div className="flex flex-wrap gap-2 sm:gap-3 mt-6 sm:mt-8">
-              {validTags.map((tag, index) => (
+              {validTags.map((tag: any, index: any) => (
                 <button
                   key={index}
                   onClick={openCommonForm}
@@ -1600,7 +1600,7 @@ useEffect(() => {
         {/* Premium Pill Indicators */}
         {projectData?.title_image?.length > 1 && (
           <div className="flex gap-2 sm:gap-3 items-center bg-black/40 md:bg-white/10 backdrop-blur-xl border border-white/20 px-5 py-3 lg:px-6 lg:py-4 rounded-full shadow-2xl w-full lg:w-auto justify-center lg:justify-start pointer-events-auto">
-            {projectData.title_image.map((_, index) => (
+            {projectData.title_image.map((_: any, index: any) => (
               <button
                 key={index}
                 onClick={() => setActiveIndex(index)}
@@ -1784,7 +1784,7 @@ useEffect(() => {
 
           {/* Enlarge QR Images (ALWAYS CENTERED) */}
           <div className="flex flex-wrap justify-center gap-6">
-            {projectData.certification.qr_images.map((qrImage, i) => (
+            {projectData.certification.qr_images.map((qrImage: any, i: any) => (
               <div 
                 key={i} 
                 className="flex-shrink-0 bg-white dark:bg-zinc-100 p-2 rounded-xl shadow-sm border border-gray-200"
@@ -2631,7 +2631,7 @@ useEffect(() => {
 
     {/* The Gallery Grid */}
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
-      {projectData?.flat_details?.isometric_view?.media?.map((plan, i) => (
+      {projectData?.flat_details?.isometric_view?.media?.map((plan: any, i: any) => (
         <motion.div
           key={i}
           initial={{ opacity: 0, y: 20 }}
@@ -3081,7 +3081,7 @@ useEffect(() => {
 
       {/* 2. Image Grid */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {filteredGallery.map((item, i) => (
+        {filteredGallery.map((item: any, i: any) => (
           <div
             key={i}
             onClick={() => {
@@ -3323,7 +3323,7 @@ useEffect(() => {
             
             {/* 1. Segmented Control Tabs */}
             <div className="bg-gray-100 dark:bg-zinc-900 p-1.5 rounded-2xl flex overflow-x-auto [-ms-overflow-style:'none'] [scrollbar-width:'none'] [&::-webkit-scrollbar]:hidden mb-8">
-              {projectData.maps.map((locType, i) => (
+              {projectData.maps.map((locType: any, i: any) => (
                 <button
                   key={i}
                   onClick={() => mapLocationSelect(locType.type)}
@@ -3363,7 +3363,7 @@ useEffect(() => {
                 {/* Continuous Vertical Track Line */}
                 <div className="absolute left-[19px] top-4 bottom-4 w-[2px] bg-gray-100 dark:bg-zinc-800"></div>
 
-                {locationData?.locations?.map((mapItem, i) => (
+                {locationData?.locations?.map((mapItem: any, i: any) => (
                   <div key={i} className="relative flex items-center gap-6 group py-4">
                     
                     {/* The Node (Pin) */}
@@ -3429,7 +3429,7 @@ useEffect(() => {
 
             {/* Document Ledger List */}
             <div className="flex flex-col border-t border-gray-200 dark:border-zinc-800">
-              {projectData.apartment_document.map((document, i) => (
+              {projectData.apartment_document.map((document: any, i: any) => (
                 <div
                   key={i}
                   className="group relative flex flex-col sm:flex-row sm:items-center justify-between gap-4 py-5 border-b border-gray-200 dark:border-zinc-800 transition-colors duration-300 hover:bg-gray-50/50 dark:hover:bg-zinc-900/30"
@@ -3495,7 +3495,7 @@ useEffect(() => {
 
             {/* Architectural Ledger List */}
             <div className="flex flex-col">
-              {projectData.tech_stack.entries.map((member, i) => (
+              {projectData.tech_stack.entries.map((member: any, i: any) => (
                 <div
                   key={i}
                   className="group flex justify-between items-baseline py-4 border-b border-gray-100 dark:border-zinc-800 last:border-none transition-all duration-300"
