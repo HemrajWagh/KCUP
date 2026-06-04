@@ -5,47 +5,7 @@ import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { X, ArrowUp, Headphones } from 'lucide-react';
 import { LucideIcon } from "lucide-react";
-import {
-  Youtube,
-  Instagram,
-  Facebook,
-  Twitter,
-  Linkedin
-} from "lucide-react";
 
-type SocialLink = {
-  icon: LucideIcon;
-  url: string;
-  label: string;
-};
-
-const socials: SocialLink[] = [
-  {
-    icon: Youtube,
-    url: "https://www.youtube.com/channel/UCSfnHQmlu8aEC64uXm9npIQ",
-    label: "Youtube",
-  },
-  {
-    icon: Instagram,
-    url: "https://instagram.com/kumarproperties",
-    label: "Instagram",
-  },
-  {
-    icon: Facebook,
-    url: "https://www.facebook.com/kumarpropertiespune",
-    label: "Facebook",
-  },
-  {
-    icon: Twitter,
-    url: "https://twitter.com/Kumarproperties",
-    label: "Twitter",
-  },
-  {
-    icon: Linkedin,
-    url: "https://www.linkedin.com/company/kumar-properties",
-    label: "Linkedin",
-  },
-];
 
 // Dynamically import Lottie to prevent SSR issues with window/browser APIs
 const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
@@ -167,14 +127,14 @@ export default function Footer() {
             </div>
 
             {/* Structured Social Network Matrix + Timestamp */}
-            <div className="pt-4 border-t border-white/5 flex flex-wrap items-center justify-between gap-4">
+            {/* <div className="pt-4 border-t border-white/5 flex flex-wrap items-center justify-between gap-4">
               <div className="flex items-center gap-3">
                 {[
-                  { icon: Youtube, url: "https://www.youtube.com/channel/UCSfnHQmlu8aEC64uXm9npIQ", label: "Youtube" },
-                  { icon: Instagram, url: "https://instagram.com/kumarproperties", label: "Instagram" },
-                  { icon: Facebook, url: "https://www.facebook.com/kumarpropertiespune", label: "Facebook" },
-                  { icon: Twitter, url: "https://twitter.com/Kumarproperties", label: "Twitter" },
-                  { icon: Linkedin, url: "https://www.linkedin.com/company/kumar-properties", label: "Linkedin" }
+                  // { icon: Youtube, url: "https://www.youtube.com/channel/UCSfnHQmlu8aEC64uXm9npIQ", label: "Youtube" },
+                  // { icon: Instagram, url: "https://instagram.com/kumarproperties", label: "Instagram" },
+                  // { icon: Facebook, url: "https://www.facebook.com/kumarpropertiespune", label: "Facebook" },
+                  // { icon: Twitter, url: "https://twitter.com/Kumarproperties", label: "Twitter" },
+                  // { icon: Linkedin, url: "https://www.linkedin.com/company/kumar-properties", label: "Linkedin" }
                 ].map((social, idx) => (
                   <a 
                     key={idx}
@@ -189,7 +149,7 @@ export default function Footer() {
                 ))}
               </div>
               <span className="text-xs font-mono font-bold tracking-wider text-white bg-white/10 px-2.5 py-1 rounded-md">IN 2026</span>
-            </div>
+            </div> */}
 
           </div>
         </div>
