@@ -1,0 +1,2336 @@
+{
+    "data": [
+        {
+            "_id": "64bc1286d9fbef66dd6f488c",
+            "title": "Parc Residenses",
+            "sub_title": "2 & 3 BHK flats",
+            "tags": [
+                "2 BHK Starting From 97.50 LACS + TAXES",
+                "3 BHK Starting From 1.37 CR. + TAXES"
+            ],
+            "title_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/f883d2b1-7c77-4eee-99be-241acc4c77ef.jpg",
+            "contact_number": "9001359934",
+            "description": "Kumar Prospera Project has 2 &3 BHK flats in Magarpatta, Hadapsar. It is a new Residential construction in Pune. The project is nestled amongst reputed EON & Magarpatta IT Parks, world-class Amanora & Seasons malls. The project offers flats for sale in Hadapsar. Though set in the hub of activities, Kumar Prospera fulfils the much-awaited supply of residential dwellings in the area around Magarpatta, Mundhwa,  Keshav Nagar and Kharadi with in-house modern amenities in combination with schools, workplace and malls in the vicinity. Thus providing a high quality of life. The developer Kumar Properties has been the hallmark of trust and excellence for more than five decades, has the impeccable quality record, and known for thoughtful design coupled with rich experience to create a masterpiece in luxury residences.",
+            "flat_view": {
+                "walk_through": "https://assets-common.kumarworld.v-verse.space/uploads/files/8417404e-035d-4805-81a1-a1477c989764.mp4",
+                "flat_view_360": "https://assets-common.kumarworld.v-verse.space/uploads/files/8417404e-035d-4805-81a1-a1477c989764.mp4",
+                "live_view": "https://assets-common.kumarworld.v-verse.space/uploads/files/8417404e-035d-4805-81a1-a1477c989764.mp4",
+                "_id": "64bc1286d9fbef66dd6f488d"
+            },
+            "tech_stack": {
+                "title": "Modern Technology – Superstructure, points: []",
+                "description": "Kumar Prospera is amongst the best upcoming projects in Pune using modern technology construction for Superstructure called the Alu-Form system wherein walls and slabs for a typical floor get cast at one time (monolithic construction). The use of aluminium formwork gives better dimensional tolerance eliminating chances of warpage/bulging. Due to this system, external walls have better weather-resistant properties, and issues related to external paint damage and water leakages are practically eliminated. Alu-Form construction also speeds up construction at the site without compromising on the quality.",
+                "structural_design_architect": "Sunil Mutalik & Associates, Pune",
+                "developer": "Kumar Agro Products Pvt. Ltd.Landscape ",
+                "designer": " Gregory Kunak, Singapore.Liason",
+                "architect": "Jagdish P. Deshpande, Pune.Site",
+                "address": " Magarpatta road, Hadapsar, Pune 411028",
+                "image_top": "https://assets-common.kumarworld.v-verse.space/uploads/files/d894e95b-d434-4603-b1bc-6e3da3f54695.jpg",
+                "image_bottom": "https://assets-common.kumarworld.v-verse.space/uploads/files/3993b66c-2d0d-4d86-9f52-261583f8e980.jpg",
+                "_id": "64bc1286d9fbef66dd6f488e"
+            },
+            "flat_details": {
+                "amenities": {
+                    "top_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/e9ea2684-f4d0-48eb-9259-fc30108b0e76.jpg",
+                    "bottom_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/7d89f29e-f991-48f2-93f4-517c5a786df8.jpg",
+                    "bulleting": [
+                        {
+                            "title": "Club House",
+                            "points": [
+                                "Gymnasium",
+                                "Multipurpose Hall",
+                                "Swimming Pool with Kids Pool and Pool Deck Area",
+                                "Table Tennis",
+                                "Indoor Games Room",
+                                "Swimming Pool Change Rooms."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f4891"
+                        },
+                        {
+                            "title": "Outdoor Party Lawn Area along with pantry and open-air Food court.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f4892"
+                        },
+                        {
+                            "title": "Tennis Court.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f4893"
+                        },
+                        {
+                            "title": "Basket Ball Court",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f4894"
+                        },
+                        {
+                            "title": "Outdoor Children play area along with a toddler play area.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f4895"
+                        },
+                        {
+                            "title": "Jogging Track.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f4896"
+                        },
+                        {
+                            "title": "Senior Citizen Plaza.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f4897"
+                        },
+                        {
+                            "title": "Outdoor Gym Area.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f4898"
+                        },
+                        {
+                            "title": "Outdoor Yoga Pavilion/s.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f4899"
+                        },
+                        {
+                            "title": "Children Skating Ring.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f489a"
+                        },
+                        {
+                            "title": "Net Cricket Area.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f489b"
+                        },
+                        {
+                            "title": "Futsal Court/ Multipurpose Court.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f489c"
+                        },
+                        {
+                            "title": "Sewage Treatment Plant and Water Treatment Plant.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f489d"
+                        }
+                    ],
+                    "_id": "64bc1286d9fbef66dd6f4890"
+                },
+                "specification": {
+                    "top_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/75c7a088-b144-4b36-a30e-2b2759694810.jpg",
+                    "bottom_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/8a312923-3833-4cea-9fc2-11df719cabc9.jpg",
+                    "bulleting": [
+                        {
+                            "title": "Construction",
+                            "points": [
+                                "A-class, earthquake-resistant construction."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f489f"
+                        },
+                        {
+                            "title": "Flooring",
+                            "points": [
+                                "Vitrified tiles in living, kitchen and bedrooms, Matt finished Ceramic Tile flooring in toilets, Anti-skid tiles for balconies/terraces."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48a0"
+                        },
+                        {
+                            "title": "Doors",
+                            "points": [
+                                "Vinyl finished flush door with SS fittings for Entrance Door, HDF Skin moulded flush doors with SS fittings for bedrooms and toilets."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48a1"
+                        },
+                        {
+                            "title": "Walls And Ceiling",
+                            "points": [
+                                "Gypsum punning on walls, Superior OBD Paint for walls and ceilings."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48a2"
+                        },
+                        {
+                            "title": "Windows",
+                            "points": [
+                                "Powder Coated Aluminum Sliding Windows with MS Grills."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48a3"
+                        },
+                        {
+                            "title": "Railings for attached Terraces",
+                            "points": [
+                                "Combination of MS / SS / Glass Railing for attached terraces."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48a4"
+                        },
+                        {
+                            "title": "Kitchen",
+                            "points": [
+                                "Granite kitchen counter, Stainless steel sink, Glazed tile dado up to Window Height, Power plug point for Water Purifier and Electric point for Exhaust Fan."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48a5"
+                        },
+                        {
+                            "title": "Plumbing, Bathroom and Toilets",
+                            "points": [
+                                "Concealed plumbing, Ceramic sanitary ware of reputed brand, Single lever diverter in shower areas along with single lever basin mixer for master toilet, 7′ height toilet dado with ceramic tiles."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48a6"
+                        },
+                        {
+                            "title": "Electricals",
+                            "points": [
+                                "Concealed copper wiring in the entire flat with ELCB and MCB, Modular electrical switch and sockets, Electric supply by way of 1 Phase / 3 Phase meter, Adequate points for lights, fans and TV, Telephone point in living and bedrooms, Power Plug point for split AC in Living Room and Master Bedroom."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48a7"
+                        },
+                        {
+                            "title": "Entrance Lobby",
+                            "points": [
+                                "Designer finish entrance lobby."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48a8"
+                        },
+                        {
+                            "title": "Lifts",
+                            "points": [
+                                "Modern, automatic lifts of reputed make."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48a9"
+                        },
+                        {
+                            "title": "External Finish",
+                            "points": [
+                                "Exterior grade texture Paint."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48aa"
+                        },
+                        {
+                            "title": "Safety",
+                            "points": [
+                                "Intercom Facility, Access control main entrance lobby at ground floor with CCTV camera."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48ab"
+                        }
+                    ],
+                    "_id": "64bc1286d9fbef66dd6f489e"
+                },
+                "isometric_view": {
+                    "media": [
+                        "https://assets-common.kumarworld.v-verse.space/uploads/files/38bc12a6-f166-46a8-976a-1b50ea38a665.jpg",
+                        "https://assets-common.kumarworld.v-verse.space/uploads/files/d9489e61-9605-4f51-bdfe-583ca41f3940.jpg"
+                    ],
+                    "_id": "64bc1286d9fbef66dd6f48ac"
+                },
+                "_id": "64bc1286d9fbef66dd6f488f"
+            },
+            "gallery_medias": [
+                "https://assets-common.kumarworld.v-verse.space/uploads/files/9b56ae46-9e29-46b9-a5bf-0f6b02b5a1af.jpg",
+                "https://assets-common.kumarworld.v-verse.space/uploads/files/8555bc9c-b4c1-407a-b4fd-12228a454222.jpg",
+                "https://assets-common.kumarworld.v-verse.space/uploads/files/7bda0de4-ee89-4906-a416-2a474939d566.jpg"
+            ],
+            "layout": "https://assets-common.kumarworld.v-verse.space/uploads/files/bf816572-dace-47dc-a9b9-70b78288449d.jpg",
+            "apartment_document": [],
+            "location_id": "64bbf29e6a47b597207a3e9d",
+            "apt_type": "3 BHK",
+            "size": "10 ft",
+            "status": "available",
+            "propertyType": "COMMERCIAL",
+            "location_name": "CityOne_Mumbai",
+            "city_name": "Mumbai",
+            "city_id": "64bbf0d16a47b597207a3e8d",
+            "__v": 0
+        },
+        {
+            "_id": "64bc1286d9fbef66dd6f48f2",
+            "title": "Kumar Prospera",
+            "sub_title": "2 & 3 BHK flats",
+            "tags": [
+                "2 BHK Starting From 97.50 LACS + TAXES",
+                "3 BHK Starting From 1.37 CR. + TAXES"
+            ],
+            "title_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/f883d2b1-7c77-4eee-99be-241acc4c77ef.jpg",
+            "contact_number": "9001359934",
+            "description": "Kumar Prospera Project has 2 &3 BHK flats in Magarpatta, Hadapsar. It is a new Residential construction in Pune. The project is nestled amongst reputed EON & Magarpatta IT Parks, world-class Amanora & Seasons malls. The project offers flats for sale in Hadapsar. Though set in the hub of activities, Kumar Prospera fulfils the much-awaited supply of residential dwellings in the area around Magarpatta, Mundhwa,  Keshav Nagar and Kharadi with in-house modern amenities in combination with schools, workplace and malls in the vicinity. Thus providing a high quality of life. The developer Kumar Properties has been the hallmark of trust and excellence for more than five decades, has the impeccable quality record, and known for thoughtful design coupled with rich experience to create a masterpiece in luxury residences.",
+            "flat_view": {
+                "walk_through": "https://assets-common.kumarworld.v-verse.space/uploads/files/8417404e-035d-4805-81a1-a1477c989764.mp4",
+                "flat_view_360": "https://assets-common.kumarworld.v-verse.space/uploads/files/8417404e-035d-4805-81a1-a1477c989764.mp4",
+                "live_view": "https://assets-common.kumarworld.v-verse.space/uploads/files/8417404e-035d-4805-81a1-a1477c989764.mp4",
+                "_id": "64bc1286d9fbef66dd6f48f3"
+            },
+            "tech_stack": {
+                "title": "Modern Technology – Superstructure, points: []",
+                "description": "Kumar Prospera is amongst the best upcoming projects in Pune using modern technology construction for Superstructure called the Alu-Form system wherein walls and slabs for a typical floor get cast at one time (monolithic construction). The use of aluminium formwork gives better dimensional tolerance eliminating chances of warpage/bulging. Due to this system, external walls have better weather-resistant properties, and issues related to external paint damage and water leakages are practically eliminated. Alu-Form construction also speeds up construction at the site without compromising on the quality.",
+                "structural_design_architect": "Sunil Mutalik & Associates, Pune",
+                "developer": "Kumar Agro Products Pvt. Ltd.Landscape ",
+                "designer": " Gregory Kunak, Singapore.Liason",
+                "architect": "Jagdish P. Deshpande, Pune.Site",
+                "address": " Magarpatta road, Hadapsar, Pune 411028",
+                "image_top": "https://assets-common.kumarworld.v-verse.space/uploads/files/d894e95b-d434-4603-b1bc-6e3da3f54695.jpg",
+                "image_bottom": "https://assets-common.kumarworld.v-verse.space/uploads/files/3993b66c-2d0d-4d86-9f52-261583f8e980.jpg",
+                "_id": "64bc1286d9fbef66dd6f48f4"
+            },
+            "flat_details": {
+                "amenities": {
+                    "top_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/e9ea2684-f4d0-48eb-9259-fc30108b0e76.jpg",
+                    "bottom_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/7d89f29e-f991-48f2-93f4-517c5a786df8.jpg",
+                    "bulleting": [
+                        {
+                            "title": "Club House",
+                            "points": [
+                                "Gymnasium",
+                                "Multipurpose Hall",
+                                "Swimming Pool with Kids Pool and Pool Deck Area",
+                                "Table Tennis",
+                                "Indoor Games Room",
+                                "Swimming Pool Change Rooms."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48f7"
+                        },
+                        {
+                            "title": "Outdoor Party Lawn Area along with pantry and open-air Food court.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48f8"
+                        },
+                        {
+                            "title": "Tennis Court.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48f9"
+                        },
+                        {
+                            "title": "Basket Ball Court",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48fa"
+                        },
+                        {
+                            "title": "Outdoor Children play area along with a toddler play area.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48fb"
+                        },
+                        {
+                            "title": "Jogging Track.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48fc"
+                        },
+                        {
+                            "title": "Senior Citizen Plaza.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48fd"
+                        },
+                        {
+                            "title": "Outdoor Gym Area.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48fe"
+                        },
+                        {
+                            "title": "Outdoor Yoga Pavilion/s.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48ff"
+                        },
+                        {
+                            "title": "Children Skating Ring.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f4900"
+                        },
+                        {
+                            "title": "Net Cricket Area.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f4901"
+                        },
+                        {
+                            "title": "Futsal Court/ Multipurpose Court.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f4902"
+                        },
+                        {
+                            "title": "Sewage Treatment Plant and Water Treatment Plant.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f4903"
+                        }
+                    ],
+                    "_id": "64bc1286d9fbef66dd6f48f6"
+                },
+                "specification": {
+                    "top_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/75c7a088-b144-4b36-a30e-2b2759694810.jpg",
+                    "bottom_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/8a312923-3833-4cea-9fc2-11df719cabc9.jpg",
+                    "bulleting": [
+                        {
+                            "title": "Construction",
+                            "points": [
+                                "A-class, earthquake-resistant construction."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f4905"
+                        },
+                        {
+                            "title": "Flooring",
+                            "points": [
+                                "Vitrified tiles in living, kitchen and bedrooms, Matt finished Ceramic Tile flooring in toilets, Anti-skid tiles for balconies/terraces."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f4906"
+                        },
+                        {
+                            "title": "Doors",
+                            "points": [
+                                "Vinyl finished flush door with SS fittings for Entrance Door, HDF Skin moulded flush doors with SS fittings for bedrooms and toilets."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f4907"
+                        },
+                        {
+                            "title": "Walls And Ceiling",
+                            "points": [
+                                "Gypsum punning on walls, Superior OBD Paint for walls and ceilings."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f4908"
+                        },
+                        {
+                            "title": "Windows",
+                            "points": [
+                                "Powder Coated Aluminum Sliding Windows with MS Grills."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f4909"
+                        },
+                        {
+                            "title": "Railings for attached Terraces",
+                            "points": [
+                                "Combination of MS / SS / Glass Railing for attached terraces."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f490a"
+                        },
+                        {
+                            "title": "Kitchen",
+                            "points": [
+                                "Granite kitchen counter, Stainless steel sink, Glazed tile dado up to Window Height, Power plug point for Water Purifier and Electric point for Exhaust Fan."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f490b"
+                        },
+                        {
+                            "title": "Plumbing, Bathroom and Toilets",
+                            "points": [
+                                "Concealed plumbing, Ceramic sanitary ware of reputed brand, Single lever diverter in shower areas along with single lever basin mixer for master toilet, 7′ height toilet dado with ceramic tiles."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f490c"
+                        },
+                        {
+                            "title": "Electricals",
+                            "points": [
+                                "Concealed copper wiring in the entire flat with ELCB and MCB, Modular electrical switch and sockets, Electric supply by way of 1 Phase / 3 Phase meter, Adequate points for lights, fans and TV, Telephone point in living and bedrooms, Power Plug point for split AC in Living Room and Master Bedroom."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f490d"
+                        },
+                        {
+                            "title": "Entrance Lobby",
+                            "points": [
+                                "Designer finish entrance lobby."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f490e"
+                        },
+                        {
+                            "title": "Lifts",
+                            "points": [
+                                "Modern, automatic lifts of reputed make."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f490f"
+                        },
+                        {
+                            "title": "External Finish",
+                            "points": [
+                                "Exterior grade texture Paint."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f4910"
+                        },
+                        {
+                            "title": "Safety",
+                            "points": [
+                                "Intercom Facility, Access control main entrance lobby at ground floor with CCTV camera."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f4911"
+                        }
+                    ],
+                    "_id": "64bc1286d9fbef66dd6f4904"
+                },
+                "isometric_view": {
+                    "media": [
+                        "https://assets-common.kumarworld.v-verse.space/uploads/files/38bc12a6-f166-46a8-976a-1b50ea38a665.jpg",
+                        "https://assets-common.kumarworld.v-verse.space/uploads/files/d9489e61-9605-4f51-bdfe-583ca41f3940.jpg"
+                    ],
+                    "_id": "64bc1286d9fbef66dd6f4912"
+                },
+                "_id": "64bc1286d9fbef66dd6f48f5"
+            },
+            "gallery_medias": [
+                "https://assets-common.kumarworld.v-verse.space/uploads/files/9b56ae46-9e29-46b9-a5bf-0f6b02b5a1af.jpg",
+                "https://assets-common.kumarworld.v-verse.space/uploads/files/8555bc9c-b4c1-407a-b4fd-12228a454222.jpg",
+                "https://assets-common.kumarworld.v-verse.space/uploads/files/7bda0de4-ee89-4906-a416-2a474939d566.jpg"
+            ],
+            "layout": "https://assets-common.kumarworld.v-verse.space/uploads/files/bf816572-dace-47dc-a9b9-70b78288449d.jpg",
+            "apartment_document": [],
+            "location_id": "64bbf2a46a47b597207a3ea1",
+            "apt_type": "2 BHK",
+            "size": "10 ft",
+            "status": "available",
+            "propertyType": "COMMERCIAL",
+            "location_name": "CityTwo_Mumbai",
+            "city_name": "Mumbai",
+            "city_id": "64bbf0d16a47b597207a3e8d",
+            "__v": 0
+        },
+        {
+            "_id": "64bc1286d9fbef66dd6f48d0",
+            "title": "Kumar Prospera",
+            "sub_title": "2 & 3 BHK flats",
+            "tags": [
+                "2 BHK Starting From 97.50 LACS + TAXES",
+                "3 BHK Starting From 1.37 CR. + TAXES"
+            ],
+            "title_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/f883d2b1-7c77-4eee-99be-241acc4c77ef.jpg",
+            "contact_number": "9001359934",
+            "description": "Kumar Prospera Project has 2 &3 BHK flats in Magarpatta, Hadapsar. It is a new Residential construction in Pune. The project is nestled amongst reputed EON & Magarpatta IT Parks, world-class Amanora & Seasons malls. The project offers flats for sale in Hadapsar. Though set in the hub of activities, Kumar Prospera fulfils the much-awaited supply of residential dwellings in the area around Magarpatta, Mundhwa,  Keshav Nagar and Kharadi with in-house modern amenities in combination with schools, workplace and malls in the vicinity. Thus providing a high quality of life. The developer Kumar Properties has been the hallmark of trust and excellence for more than five decades, has the impeccable quality record, and known for thoughtful design coupled with rich experience to create a masterpiece in luxury residences.",
+            "flat_view": {
+                "walk_through": "https://assets-common.kumarworld.v-verse.space/uploads/files/8417404e-035d-4805-81a1-a1477c989764.mp4",
+                "flat_view_360": "https://assets-common.kumarworld.v-verse.space/uploads/files/8417404e-035d-4805-81a1-a1477c989764.mp4",
+                "live_view": "https://assets-common.kumarworld.v-verse.space/uploads/files/8417404e-035d-4805-81a1-a1477c989764.mp4",
+                "_id": "64bc1286d9fbef66dd6f48d1"
+            },
+            "tech_stack": {
+                "title": "Modern Technology – Superstructure, points: []",
+                "description": "Kumar Prospera is amongst the best upcoming projects in Pune using modern technology construction for Superstructure called the Alu-Form system wherein walls and slabs for a typical floor get cast at one time (monolithic construction). The use of aluminium formwork gives better dimensional tolerance eliminating chances of warpage/bulging. Due to this system, external walls have better weather-resistant properties, and issues related to external paint damage and water leakages are practically eliminated. Alu-Form construction also speeds up construction at the site without compromising on the quality.",
+                "structural_design_architect": "Sunil Mutalik & Associates, Pune",
+                "developer": "Kumar Agro Products Pvt. Ltd.Landscape ",
+                "designer": " Gregory Kunak, Singapore.Liason",
+                "architect": "Jagdish P. Deshpande, Pune.Site",
+                "address": " Magarpatta road, Hadapsar, Pune 411028",
+                "image_top": "https://assets-common.kumarworld.v-verse.space/uploads/files/d894e95b-d434-4603-b1bc-6e3da3f54695.jpg",
+                "image_bottom": "https://assets-common.kumarworld.v-verse.space/uploads/files/3993b66c-2d0d-4d86-9f52-261583f8e980.jpg",
+                "_id": "64bc1286d9fbef66dd6f48d2"
+            },
+            "flat_details": {
+                "amenities": {
+                    "top_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/e9ea2684-f4d0-48eb-9259-fc30108b0e76.jpg",
+                    "bottom_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/7d89f29e-f991-48f2-93f4-517c5a786df8.jpg",
+                    "bulleting": [
+                        {
+                            "title": "Club House",
+                            "points": [
+                                "Gymnasium",
+                                "Multipurpose Hall",
+                                "Swimming Pool with Kids Pool and Pool Deck Area",
+                                "Table Tennis",
+                                "Indoor Games Room",
+                                "Swimming Pool Change Rooms."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48d5"
+                        },
+                        {
+                            "title": "Outdoor Party Lawn Area along with pantry and open-air Food court.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48d6"
+                        },
+                        {
+                            "title": "Tennis Court.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48d7"
+                        },
+                        {
+                            "title": "Basket Ball Court",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48d8"
+                        },
+                        {
+                            "title": "Outdoor Children play area along with a toddler play area.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48d9"
+                        },
+                        {
+                            "title": "Jogging Track.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48da"
+                        },
+                        {
+                            "title": "Senior Citizen Plaza.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48db"
+                        },
+                        {
+                            "title": "Outdoor Gym Area.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48dc"
+                        },
+                        {
+                            "title": "Outdoor Yoga Pavilion/s.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48dd"
+                        },
+                        {
+                            "title": "Children Skating Ring.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48de"
+                        },
+                        {
+                            "title": "Net Cricket Area.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48df"
+                        },
+                        {
+                            "title": "Futsal Court/ Multipurpose Court.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48e0"
+                        },
+                        {
+                            "title": "Sewage Treatment Plant and Water Treatment Plant.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48e1"
+                        }
+                    ],
+                    "_id": "64bc1286d9fbef66dd6f48d4"
+                },
+                "specification": {
+                    "top_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/75c7a088-b144-4b36-a30e-2b2759694810.jpg",
+                    "bottom_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/8a312923-3833-4cea-9fc2-11df719cabc9.jpg",
+                    "bulleting": [
+                        {
+                            "title": "Construction",
+                            "points": [
+                                "A-class, earthquake-resistant construction."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48e3"
+                        },
+                        {
+                            "title": "Flooring",
+                            "points": [
+                                "Vitrified tiles in living, kitchen and bedrooms, Matt finished Ceramic Tile flooring in toilets, Anti-skid tiles for balconies/terraces."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48e4"
+                        },
+                        {
+                            "title": "Doors",
+                            "points": [
+                                "Vinyl finished flush door with SS fittings for Entrance Door, HDF Skin moulded flush doors with SS fittings for bedrooms and toilets."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48e5"
+                        },
+                        {
+                            "title": "Walls And Ceiling",
+                            "points": [
+                                "Gypsum punning on walls, Superior OBD Paint for walls and ceilings."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48e6"
+                        },
+                        {
+                            "title": "Windows",
+                            "points": [
+                                "Powder Coated Aluminum Sliding Windows with MS Grills."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48e7"
+                        },
+                        {
+                            "title": "Railings for attached Terraces",
+                            "points": [
+                                "Combination of MS / SS / Glass Railing for attached terraces."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48e8"
+                        },
+                        {
+                            "title": "Kitchen",
+                            "points": [
+                                "Granite kitchen counter, Stainless steel sink, Glazed tile dado up to Window Height, Power plug point for Water Purifier and Electric point for Exhaust Fan."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48e9"
+                        },
+                        {
+                            "title": "Plumbing, Bathroom and Toilets",
+                            "points": [
+                                "Concealed plumbing, Ceramic sanitary ware of reputed brand, Single lever diverter in shower areas along with single lever basin mixer for master toilet, 7′ height toilet dado with ceramic tiles."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48ea"
+                        },
+                        {
+                            "title": "Electricals",
+                            "points": [
+                                "Concealed copper wiring in the entire flat with ELCB and MCB, Modular electrical switch and sockets, Electric supply by way of 1 Phase / 3 Phase meter, Adequate points for lights, fans and TV, Telephone point in living and bedrooms, Power Plug point for split AC in Living Room and Master Bedroom."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48eb"
+                        },
+                        {
+                            "title": "Entrance Lobby",
+                            "points": [
+                                "Designer finish entrance lobby."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48ec"
+                        },
+                        {
+                            "title": "Lifts",
+                            "points": [
+                                "Modern, automatic lifts of reputed make."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48ed"
+                        },
+                        {
+                            "title": "External Finish",
+                            "points": [
+                                "Exterior grade texture Paint."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48ee"
+                        },
+                        {
+                            "title": "Safety",
+                            "points": [
+                                "Intercom Facility, Access control main entrance lobby at ground floor with CCTV camera."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48ef"
+                        }
+                    ],
+                    "_id": "64bc1286d9fbef66dd6f48e2"
+                },
+                "isometric_view": {
+                    "media": [
+                        "https://assets-common.kumarworld.v-verse.space/uploads/files/38bc12a6-f166-46a8-976a-1b50ea38a665.jpg",
+                        "https://assets-common.kumarworld.v-verse.space/uploads/files/d9489e61-9605-4f51-bdfe-583ca41f3940.jpg"
+                    ],
+                    "_id": "64bc1286d9fbef66dd6f48f0"
+                },
+                "_id": "64bc1286d9fbef66dd6f48d3"
+            },
+            "gallery_medias": [
+                "https://assets-common.kumarworld.v-verse.space/uploads/files/9b56ae46-9e29-46b9-a5bf-0f6b02b5a1af.jpg",
+                "https://assets-common.kumarworld.v-verse.space/uploads/files/8555bc9c-b4c1-407a-b4fd-12228a454222.jpg",
+                "https://assets-common.kumarworld.v-verse.space/uploads/files/7bda0de4-ee89-4906-a416-2a474939d566.jpg"
+            ],
+            "layout": "https://assets-common.kumarworld.v-verse.space/uploads/files/bf816572-dace-47dc-a9b9-70b78288449d.jpg",
+            "apartment_document": [],
+            "location_id": "64bbf2896a47b597207a3e99",
+            "apt_type": "3 BHK",
+            "size": "10 ft",
+            "status": "available",
+            "propertyType": "COMMERCIAL",
+            "location_name": "CityTwo_Banglore",
+            "city_name": "Banglore",
+            "city_id": "64bbe49abfbb91d3b0775c2b",
+            "__v": 0
+        },
+        {
+            "_id": "64bc1286d9fbef66dd6f48ae",
+            "title": "Kumar Infinia Park",
+            "sub_title": "2 & 3 BHK flats",
+            "tags": [
+                "2 BHK Starting From 97.50 LACS + TAXES",
+                "3 BHK Starting From 1.37 CR. + TAXES"
+            ],
+            "title_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/f883d2b1-7c77-4eee-99be-241acc4c77ef.jpg",
+            "contact_number": "9001359934",
+            "description": "Kumar Prospera Project has 2 &3 BHK flats in Magarpatta, Hadapsar. It is a new Residential construction in Pune. The project is nestled amongst reputed EON & Magarpatta IT Parks, world-class Amanora & Seasons malls. The project offers flats for sale in Hadapsar. Though set in the hub of activities, Kumar Prospera fulfils the much-awaited supply of residential dwellings in the area around Magarpatta, Mundhwa,  Keshav Nagar and Kharadi with in-house modern amenities in combination with schools, workplace and malls in the vicinity. Thus providing a high quality of life. The developer Kumar Properties has been the hallmark of trust and excellence for more than five decades, has the impeccable quality record, and known for thoughtful design coupled with rich experience to create a masterpiece in luxury residences.",
+            "flat_view": {
+                "walk_through": "https://assets-common.kumarworld.v-verse.space/uploads/files/8417404e-035d-4805-81a1-a1477c989764.mp4",
+                "flat_view_360": "https://assets-common.kumarworld.v-verse.space/uploads/files/8417404e-035d-4805-81a1-a1477c989764.mp4",
+                "live_view": "https://assets-common.kumarworld.v-verse.space/uploads/files/8417404e-035d-4805-81a1-a1477c989764.mp4",
+                "_id": "64bc1286d9fbef66dd6f48af"
+            },
+            "tech_stack": {
+                "title": "Modern Technology – Superstructure, points: []",
+                "description": "Kumar Prospera is amongst the best upcoming projects in Pune using modern technology construction for Superstructure called the Alu-Form system wherein walls and slabs for a typical floor get cast at one time (monolithic construction). The use of aluminium formwork gives better dimensional tolerance eliminating chances of warpage/bulging. Due to this system, external walls have better weather-resistant properties, and issues related to external paint damage and water leakages are practically eliminated. Alu-Form construction also speeds up construction at the site without compromising on the quality.",
+                "structural_design_architect": "Sunil Mutalik & Associates, Pune",
+                "developer": "Kumar Agro Products Pvt. Ltd.Landscape ",
+                "designer": " Gregory Kunak, Singapore.Liason",
+                "architect": "Jagdish P. Deshpande, Pune.Site",
+                "address": " Magarpatta road, Hadapsar, Pune 411028",
+                "image_top": "https://assets-common.kumarworld.v-verse.space/uploads/files/d894e95b-d434-4603-b1bc-6e3da3f54695.jpg",
+                "image_bottom": "https://assets-common.kumarworld.v-verse.space/uploads/files/3993b66c-2d0d-4d86-9f52-261583f8e980.jpg",
+                "_id": "64bc1286d9fbef66dd6f48b0"
+            },
+            "flat_details": {
+                "amenities": {
+                    "top_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/e9ea2684-f4d0-48eb-9259-fc30108b0e76.jpg",
+                    "bottom_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/7d89f29e-f991-48f2-93f4-517c5a786df8.jpg",
+                    "bulleting": [
+                        {
+                            "title": "Club House",
+                            "points": [
+                                "Gymnasium",
+                                "Multipurpose Hall",
+                                "Swimming Pool with Kids Pool and Pool Deck Area",
+                                "Table Tennis",
+                                "Indoor Games Room",
+                                "Swimming Pool Change Rooms."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48b3"
+                        },
+                        {
+                            "title": "Outdoor Party Lawn Area along with pantry and open-air Food court.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48b4"
+                        },
+                        {
+                            "title": "Tennis Court.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48b5"
+                        },
+                        {
+                            "title": "Basket Ball Court",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48b6"
+                        },
+                        {
+                            "title": "Outdoor Children play area along with a toddler play area.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48b7"
+                        },
+                        {
+                            "title": "Jogging Track.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48b8"
+                        },
+                        {
+                            "title": "Senior Citizen Plaza.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48b9"
+                        },
+                        {
+                            "title": "Outdoor Gym Area.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48ba"
+                        },
+                        {
+                            "title": "Outdoor Yoga Pavilion/s.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48bb"
+                        },
+                        {
+                            "title": "Children Skating Ring.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48bc"
+                        },
+                        {
+                            "title": "Net Cricket Area.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48bd"
+                        },
+                        {
+                            "title": "Futsal Court/ Multipurpose Court.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48be"
+                        },
+                        {
+                            "title": "Sewage Treatment Plant and Water Treatment Plant.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f48bf"
+                        }
+                    ],
+                    "_id": "64bc1286d9fbef66dd6f48b2"
+                },
+                "specification": {
+                    "top_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/75c7a088-b144-4b36-a30e-2b2759694810.jpg",
+                    "bottom_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/8a312923-3833-4cea-9fc2-11df719cabc9.jpg",
+                    "bulleting": [
+                        {
+                            "title": "Construction",
+                            "points": [
+                                "A-class, earthquake-resistant construction."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48c1"
+                        },
+                        {
+                            "title": "Flooring",
+                            "points": [
+                                "Vitrified tiles in living, kitchen and bedrooms, Matt finished Ceramic Tile flooring in toilets, Anti-skid tiles for balconies/terraces."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48c2"
+                        },
+                        {
+                            "title": "Doors",
+                            "points": [
+                                "Vinyl finished flush door with SS fittings for Entrance Door, HDF Skin moulded flush doors with SS fittings for bedrooms and toilets."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48c3"
+                        },
+                        {
+                            "title": "Walls And Ceiling",
+                            "points": [
+                                "Gypsum punning on walls, Superior OBD Paint for walls and ceilings."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48c4"
+                        },
+                        {
+                            "title": "Windows",
+                            "points": [
+                                "Powder Coated Aluminum Sliding Windows with MS Grills."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48c5"
+                        },
+                        {
+                            "title": "Railings for attached Terraces",
+                            "points": [
+                                "Combination of MS / SS / Glass Railing for attached terraces."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48c6"
+                        },
+                        {
+                            "title": "Kitchen",
+                            "points": [
+                                "Granite kitchen counter, Stainless steel sink, Glazed tile dado up to Window Height, Power plug point for Water Purifier and Electric point for Exhaust Fan."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48c7"
+                        },
+                        {
+                            "title": "Plumbing, Bathroom and Toilets",
+                            "points": [
+                                "Concealed plumbing, Ceramic sanitary ware of reputed brand, Single lever diverter in shower areas along with single lever basin mixer for master toilet, 7′ height toilet dado with ceramic tiles."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48c8"
+                        },
+                        {
+                            "title": "Electricals",
+                            "points": [
+                                "Concealed copper wiring in the entire flat with ELCB and MCB, Modular electrical switch and sockets, Electric supply by way of 1 Phase / 3 Phase meter, Adequate points for lights, fans and TV, Telephone point in living and bedrooms, Power Plug point for split AC in Living Room and Master Bedroom."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48c9"
+                        },
+                        {
+                            "title": "Entrance Lobby",
+                            "points": [
+                                "Designer finish entrance lobby."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48ca"
+                        },
+                        {
+                            "title": "Lifts",
+                            "points": [
+                                "Modern, automatic lifts of reputed make."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48cb"
+                        },
+                        {
+                            "title": "External Finish",
+                            "points": [
+                                "Exterior grade texture Paint."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48cc"
+                        },
+                        {
+                            "title": "Safety",
+                            "points": [
+                                "Intercom Facility, Access control main entrance lobby at ground floor with CCTV camera."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f48cd"
+                        }
+                    ],
+                    "_id": "64bc1286d9fbef66dd6f48c0"
+                },
+                "isometric_view": {
+                    "media": [
+                        "https://assets-common.kumarworld.v-verse.space/uploads/files/38bc12a6-f166-46a8-976a-1b50ea38a665.jpg",
+                        "https://assets-common.kumarworld.v-verse.space/uploads/files/d9489e61-9605-4f51-bdfe-583ca41f3940.jpg"
+                    ],
+                    "_id": "64bc1286d9fbef66dd6f48ce"
+                },
+                "_id": "64bc1286d9fbef66dd6f48b1"
+            },
+            "gallery_medias": [
+                "https://assets-common.kumarworld.v-verse.space/uploads/files/9b56ae46-9e29-46b9-a5bf-0f6b02b5a1af.jpg",
+                "https://assets-common.kumarworld.v-verse.space/uploads/files/8555bc9c-b4c1-407a-b4fd-12228a454222.jpg",
+                "https://assets-common.kumarworld.v-verse.space/uploads/files/7bda0de4-ee89-4906-a416-2a474939d566.jpg"
+            ],
+            "layout": "https://assets-common.kumarworld.v-verse.space/uploads/files/bf816572-dace-47dc-a9b9-70b78288449d.jpg",
+            "apartment_document": [],
+            "location_id": "64bbf2826a47b597207a3e95",
+            "apt_type": "3 BHK",
+            "size": "10 ft",
+            "status": "available",
+            "propertyType": "COMMERCIAL",
+            "location_name": "CityOne_Banglore",
+            "city_name": "Banglore",
+            "city_id": "64bbe49abfbb91d3b0775c2b",
+            "__v": 0
+        },
+        {
+            "_id": "64bc1286d9fbef66dd6f4914",
+            "title": "Kumar Prospera",
+            "sub_title": "2 & 3 BHK flats",
+            "tags": [
+                "2 BHK Starting From 97.50 LACS + TAXES",
+                "3 BHK Starting From 1.37 CR. + TAXES"
+            ],
+            "title_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/f883d2b1-7c77-4eee-99be-241acc4c77ef.jpg",
+            "contact_number": "9001359934",
+            "description": "Kumar Prospera Project has 2 &3 BHK flats in Magarpatta, Hadapsar. It is a new Residential construction in Pune. The project is nestled amongst reputed EON & Magarpatta IT Parks, world-class Amanora & Seasons malls. The project offers flats for sale in Hadapsar. Though set in the hub of activities, Kumar Prospera fulfils the much-awaited supply of residential dwellings in the area around Magarpatta, Mundhwa,  Keshav Nagar and Kharadi with in-house modern amenities in combination with schools, workplace and malls in the vicinity. Thus providing a high quality of life. The developer Kumar Properties has been the hallmark of trust and excellence for more than five decades, has the impeccable quality record, and known for thoughtful design coupled with rich experience to create a masterpiece in luxury residences.",
+            "flat_view": {
+                "walk_through": "https://assets-common.kumarworld.v-verse.space/uploads/files/8417404e-035d-4805-81a1-a1477c989764.mp4",
+                "flat_view_360": "https://assets-common.kumarworld.v-verse.space/uploads/files/8417404e-035d-4805-81a1-a1477c989764.mp4",
+                "live_view": "https://assets-common.kumarworld.v-verse.space/uploads/files/8417404e-035d-4805-81a1-a1477c989764.mp4",
+                "_id": "64bc1286d9fbef66dd6f4915"
+            },
+            "tech_stack": {
+                "title": "Modern Technology – Superstructure, points: []",
+                "description": "Kumar Prospera is amongst the best upcoming projects in Pune using modern technology construction for Superstructure called the Alu-Form system wherein walls and slabs for a typical floor get cast at one time (monolithic construction). The use of aluminium formwork gives better dimensional tolerance eliminating chances of warpage/bulging. Due to this system, external walls have better weather-resistant properties, and issues related to external paint damage and water leakages are practically eliminated. Alu-Form construction also speeds up construction at the site without compromising on the quality.",
+                "structural_design_architect": "Sunil Mutalik & Associates, Pune",
+                "developer": "Kumar Agro Products Pvt. Ltd.Landscape ",
+                "designer": " Gregory Kunak, Singapore.Liason",
+                "architect": "Jagdish P. Deshpande, Pune.Site",
+                "address": " Magarpatta road, Hadapsar, Pune 411028",
+                "image_top": "https://assets-common.kumarworld.v-verse.space/uploads/files/d894e95b-d434-4603-b1bc-6e3da3f54695.jpg",
+                "image_bottom": "https://assets-common.kumarworld.v-verse.space/uploads/files/3993b66c-2d0d-4d86-9f52-261583f8e980.jpg",
+                "_id": "64bc1286d9fbef66dd6f4916"
+            },
+            "flat_details": {
+                "amenities": {
+                    "top_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/e9ea2684-f4d0-48eb-9259-fc30108b0e76.jpg",
+                    "bottom_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/7d89f29e-f991-48f2-93f4-517c5a786df8.jpg",
+                    "bulleting": [
+                        {
+                            "title": "Club House",
+                            "points": [
+                                "Gymnasium",
+                                "Multipurpose Hall",
+                                "Swimming Pool with Kids Pool and Pool Deck Area",
+                                "Table Tennis",
+                                "Indoor Games Room",
+                                "Swimming Pool Change Rooms."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f4919"
+                        },
+                        {
+                            "title": "Outdoor Party Lawn Area along with pantry and open-air Food court.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f491a"
+                        },
+                        {
+                            "title": "Tennis Court.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f491b"
+                        },
+                        {
+                            "title": "Basket Ball Court",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f491c"
+                        },
+                        {
+                            "title": "Outdoor Children play area along with a toddler play area.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f491d"
+                        },
+                        {
+                            "title": "Jogging Track.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f491e"
+                        },
+                        {
+                            "title": "Senior Citizen Plaza.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f491f"
+                        },
+                        {
+                            "title": "Outdoor Gym Area.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f4920"
+                        },
+                        {
+                            "title": "Outdoor Yoga Pavilion/s.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f4921"
+                        },
+                        {
+                            "title": "Children Skating Ring.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f4922"
+                        },
+                        {
+                            "title": "Net Cricket Area.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f4923"
+                        },
+                        {
+                            "title": "Futsal Court/ Multipurpose Court.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f4924"
+                        },
+                        {
+                            "title": "Sewage Treatment Plant and Water Treatment Plant.",
+                            "points": [],
+                            "_id": "64bc1286d9fbef66dd6f4925"
+                        }
+                    ],
+                    "_id": "64bc1286d9fbef66dd6f4918"
+                },
+                "specification": {
+                    "top_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/75c7a088-b144-4b36-a30e-2b2759694810.jpg",
+                    "bottom_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/8a312923-3833-4cea-9fc2-11df719cabc9.jpg",
+                    "bulleting": [
+                        {
+                            "title": "Construction",
+                            "points": [
+                                "A-class, earthquake-resistant construction."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f4927"
+                        },
+                        {
+                            "title": "Flooring",
+                            "points": [
+                                "Vitrified tiles in living, kitchen and bedrooms, Matt finished Ceramic Tile flooring in toilets, Anti-skid tiles for balconies/terraces."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f4928"
+                        },
+                        {
+                            "title": "Doors",
+                            "points": [
+                                "Vinyl finished flush door with SS fittings for Entrance Door, HDF Skin moulded flush doors with SS fittings for bedrooms and toilets."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f4929"
+                        },
+                        {
+                            "title": "Walls And Ceiling",
+                            "points": [
+                                "Gypsum punning on walls, Superior OBD Paint for walls and ceilings."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f492a"
+                        },
+                        {
+                            "title": "Windows",
+                            "points": [
+                                "Powder Coated Aluminum Sliding Windows with MS Grills."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f492b"
+                        },
+                        {
+                            "title": "Railings for attached Terraces",
+                            "points": [
+                                "Combination of MS / SS / Glass Railing for attached terraces."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f492c"
+                        },
+                        {
+                            "title": "Kitchen",
+                            "points": [
+                                "Granite kitchen counter, Stainless steel sink, Glazed tile dado up to Window Height, Power plug point for Water Purifier and Electric point for Exhaust Fan."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f492d"
+                        },
+                        {
+                            "title": "Plumbing, Bathroom and Toilets",
+                            "points": [
+                                "Concealed plumbing, Ceramic sanitary ware of reputed brand, Single lever diverter in shower areas along with single lever basin mixer for master toilet, 7′ height toilet dado with ceramic tiles."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f492e"
+                        },
+                        {
+                            "title": "Electricals",
+                            "points": [
+                                "Concealed copper wiring in the entire flat with ELCB and MCB, Modular electrical switch and sockets, Electric supply by way of 1 Phase / 3 Phase meter, Adequate points for lights, fans and TV, Telephone point in living and bedrooms, Power Plug point for split AC in Living Room and Master Bedroom."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f492f"
+                        },
+                        {
+                            "title": "Entrance Lobby",
+                            "points": [
+                                "Designer finish entrance lobby."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f4930"
+                        },
+                        {
+                            "title": "Lifts",
+                            "points": [
+                                "Modern, automatic lifts of reputed make."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f4931"
+                        },
+                        {
+                            "title": "External Finish",
+                            "points": [
+                                "Exterior grade texture Paint."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f4932"
+                        },
+                        {
+                            "title": "Safety",
+                            "points": [
+                                "Intercom Facility, Access control main entrance lobby at ground floor with CCTV camera."
+                            ],
+                            "_id": "64bc1286d9fbef66dd6f4933"
+                        }
+                    ],
+                    "_id": "64bc1286d9fbef66dd6f4926"
+                },
+                "isometric_view": {
+                    "media": [
+                        "https://assets-common.kumarworld.v-verse.space/uploads/files/38bc12a6-f166-46a8-976a-1b50ea38a665.jpg",
+                        "https://assets-common.kumarworld.v-verse.space/uploads/files/d9489e61-9605-4f51-bdfe-583ca41f3940.jpg"
+                    ],
+                    "_id": "64bc1286d9fbef66dd6f4934"
+                },
+                "_id": "64bc1286d9fbef66dd6f4917"
+            },
+            "gallery_medias": [
+                "https://assets-common.kumarworld.v-verse.space/uploads/files/9b56ae46-9e29-46b9-a5bf-0f6b02b5a1af.jpg",
+                "https://assets-common.kumarworld.v-verse.space/uploads/files/8555bc9c-b4c1-407a-b4fd-12228a454222.jpg",
+                "https://assets-common.kumarworld.v-verse.space/uploads/files/7bda0de4-ee89-4906-a416-2a474939d566.jpg"
+            ],
+            "layout": "https://assets-common.kumarworld.v-verse.space/uploads/files/bf816572-dace-47dc-a9b9-70b78288449d.jpg",
+            "apartment_document": [],
+            "location_id": "64bbe4a9bfbb91d3b0775c30",
+            "apt_type": "3 BHK",
+            "size": "10 ft",
+            "status": "available",
+            "propertyType": "COMMERCIAL",
+            "location_name": "dasarahalli",
+            "city_name": "Banglore",
+            "city_id": "64bbe49abfbb91d3b0775c2b",
+            "__v": 0
+        },
+        {
+            "_id": "64bc1289d9fbef66dd6f4944",
+            "title": "Kumar Infinia Park",
+            "sub_title": "2 & 3 BHK flats",
+            "tags": [
+                "2 BHK Starting From 97.50 LACS + TAXES",
+                "3 BHK Starting From 1.37 CR. + TAXES"
+            ],
+            "title_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/f883d2b1-7c77-4eee-99be-241acc4c77ef.jpg",
+            "contact_number": "9001359934",
+            "description": "Kumar Prospera Project has 2 &3 BHK flats in Magarpatta, Hadapsar. It is a new Residential construction in Pune. The project is nestled amongst reputed EON & Magarpatta IT Parks, world-class Amanora & Seasons malls. The project offers flats for sale in Hadapsar. Though set in the hub of activities, Kumar Prospera fulfils the much-awaited supply of residential dwellings in the area around Magarpatta, Mundhwa,  Keshav Nagar and Kharadi with in-house modern amenities in combination with schools, workplace and malls in the vicinity. Thus providing a high quality of life. The developer Kumar Properties has been the hallmark of trust and excellence for more than five decades, has the impeccable quality record, and known for thoughtful design coupled with rich experience to create a masterpiece in luxury residences.",
+            "flat_view": {
+                "walk_through": "https://assets-common.kumarworld.v-verse.space/uploads/files/8417404e-035d-4805-81a1-a1477c989764.mp4",
+                "flat_view_360": "https://assets-common.kumarworld.v-verse.space/uploads/files/8417404e-035d-4805-81a1-a1477c989764.mp4",
+                "live_view": "https://assets-common.kumarworld.v-verse.space/uploads/files/8417404e-035d-4805-81a1-a1477c989764.mp4",
+                "_id": "64bc1289d9fbef66dd6f4945"
+            },
+            "tech_stack": {
+                "title": "Modern Technology – Superstructure, points: []",
+                "description": "Kumar Prospera is amongst the best upcoming projects in Pune using modern technology construction for Superstructure called the Alu-Form system wherein walls and slabs for a typical floor get cast at one time (monolithic construction). The use of aluminium formwork gives better dimensional tolerance eliminating chances of warpage/bulging. Due to this system, external walls have better weather-resistant properties, and issues related to external paint damage and water leakages are practically eliminated. Alu-Form construction also speeds up construction at the site without compromising on the quality.",
+                "structural_design_architect": "Sunil Mutalik & Associates, Pune",
+                "developer": "Kumar Agro Products Pvt. Ltd.Landscape ",
+                "designer": " Gregory Kunak, Singapore.Liason",
+                "architect": "Jagdish P. Deshpande, Pune.Site",
+                "address": " Magarpatta road, Hadapsar, Pune 411028",
+                "image_top": "https://assets-common.kumarworld.v-verse.space/uploads/files/d894e95b-d434-4603-b1bc-6e3da3f54695.jpg",
+                "image_bottom": "https://assets-common.kumarworld.v-verse.space/uploads/files/3993b66c-2d0d-4d86-9f52-261583f8e980.jpg",
+                "_id": "64bc1289d9fbef66dd6f4946"
+            },
+            "flat_details": {
+                "amenities": {
+                    "top_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/e9ea2684-f4d0-48eb-9259-fc30108b0e76.jpg",
+                    "bottom_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/7d89f29e-f991-48f2-93f4-517c5a786df8.jpg",
+                    "bulleting": [
+                        {
+                            "title": "Club House",
+                            "points": [
+                                "Gymnasium",
+                                "Multipurpose Hall",
+                                "Swimming Pool with Kids Pool and Pool Deck Area",
+                                "Table Tennis",
+                                "Indoor Games Room",
+                                "Swimming Pool Change Rooms."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f4949"
+                        },
+                        {
+                            "title": "Outdoor Party Lawn Area along with pantry and open-air Food court.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f494a"
+                        },
+                        {
+                            "title": "Tennis Court.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f494b"
+                        },
+                        {
+                            "title": "Basket Ball Court",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f494c"
+                        },
+                        {
+                            "title": "Outdoor Children play area along with a toddler play area.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f494d"
+                        },
+                        {
+                            "title": "Jogging Track.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f494e"
+                        },
+                        {
+                            "title": "Senior Citizen Plaza.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f494f"
+                        },
+                        {
+                            "title": "Outdoor Gym Area.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f4950"
+                        },
+                        {
+                            "title": "Outdoor Yoga Pavilion/s.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f4951"
+                        },
+                        {
+                            "title": "Children Skating Ring.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f4952"
+                        },
+                        {
+                            "title": "Net Cricket Area.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f4953"
+                        },
+                        {
+                            "title": "Futsal Court/ Multipurpose Court.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f4954"
+                        },
+                        {
+                            "title": "Sewage Treatment Plant and Water Treatment Plant.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f4955"
+                        }
+                    ],
+                    "_id": "64bc1289d9fbef66dd6f4948"
+                },
+                "specification": {
+                    "top_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/75c7a088-b144-4b36-a30e-2b2759694810.jpg",
+                    "bottom_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/8a312923-3833-4cea-9fc2-11df719cabc9.jpg",
+                    "bulleting": [
+                        {
+                            "title": "Construction",
+                            "points": [
+                                "A-class, earthquake-resistant construction."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f4957"
+                        },
+                        {
+                            "title": "Flooring",
+                            "points": [
+                                "Vitrified tiles in living, kitchen and bedrooms, Matt finished Ceramic Tile flooring in toilets, Anti-skid tiles for balconies/terraces."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f4958"
+                        },
+                        {
+                            "title": "Doors",
+                            "points": [
+                                "Vinyl finished flush door with SS fittings for Entrance Door, HDF Skin moulded flush doors with SS fittings for bedrooms and toilets."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f4959"
+                        },
+                        {
+                            "title": "Walls And Ceiling",
+                            "points": [
+                                "Gypsum punning on walls, Superior OBD Paint for walls and ceilings."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f495a"
+                        },
+                        {
+                            "title": "Windows",
+                            "points": [
+                                "Powder Coated Aluminum Sliding Windows with MS Grills."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f495b"
+                        },
+                        {
+                            "title": "Railings for attached Terraces",
+                            "points": [
+                                "Combination of MS / SS / Glass Railing for attached terraces."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f495c"
+                        },
+                        {
+                            "title": "Kitchen",
+                            "points": [
+                                "Granite kitchen counter, Stainless steel sink, Glazed tile dado up to Window Height, Power plug point for Water Purifier and Electric point for Exhaust Fan."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f495d"
+                        },
+                        {
+                            "title": "Plumbing, Bathroom and Toilets",
+                            "points": [
+                                "Concealed plumbing, Ceramic sanitary ware of reputed brand, Single lever diverter in shower areas along with single lever basin mixer for master toilet, 7′ height toilet dado with ceramic tiles."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f495e"
+                        },
+                        {
+                            "title": "Electricals",
+                            "points": [
+                                "Concealed copper wiring in the entire flat with ELCB and MCB, Modular electrical switch and sockets, Electric supply by way of 1 Phase / 3 Phase meter, Adequate points for lights, fans and TV, Telephone point in living and bedrooms, Power Plug point for split AC in Living Room and Master Bedroom."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f495f"
+                        },
+                        {
+                            "title": "Entrance Lobby",
+                            "points": [
+                                "Designer finish entrance lobby."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f4960"
+                        },
+                        {
+                            "title": "Lifts",
+                            "points": [
+                                "Modern, automatic lifts of reputed make."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f4961"
+                        },
+                        {
+                            "title": "External Finish",
+                            "points": [
+                                "Exterior grade texture Paint."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f4962"
+                        },
+                        {
+                            "title": "Safety",
+                            "points": [
+                                "Intercom Facility, Access control main entrance lobby at ground floor with CCTV camera."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f4963"
+                        }
+                    ],
+                    "_id": "64bc1289d9fbef66dd6f4956"
+                },
+                "isometric_view": {
+                    "media": [
+                        "https://assets-common.kumarworld.v-verse.space/uploads/files/38bc12a6-f166-46a8-976a-1b50ea38a665.jpg",
+                        "https://assets-common.kumarworld.v-verse.space/uploads/files/d9489e61-9605-4f51-bdfe-583ca41f3940.jpg"
+                    ],
+                    "_id": "64bc1289d9fbef66dd6f4964"
+                },
+                "_id": "64bc1289d9fbef66dd6f4947"
+            },
+            "gallery_medias": [
+                "https://assets-common.kumarworld.v-verse.space/uploads/files/9b56ae46-9e29-46b9-a5bf-0f6b02b5a1af.jpg",
+                "https://assets-common.kumarworld.v-verse.space/uploads/files/8555bc9c-b4c1-407a-b4fd-12228a454222.jpg",
+                "https://assets-common.kumarworld.v-verse.space/uploads/files/7bda0de4-ee89-4906-a416-2a474939d566.jpg"
+            ],
+            "layout": "https://assets-common.kumarworld.v-verse.space/uploads/files/bf816572-dace-47dc-a9b9-70b78288449d.jpg",
+            "apartment_document": [],
+            "location_id": "64bbf29e6a47b597207a3e9d",
+            "apt_type": "3 BHK",
+            "size": "10 ft",
+            "status": "available",
+            "propertyType": "COMMERCIAL",
+            "location_name": "CityOne_Mumbai",
+            "city_name": "Mumbai",
+            "city_id": "64bbf0d16a47b597207a3e8d",
+            "__v": 0
+        },
+        {
+            "_id": "64bc1289d9fbef66dd6f4967",
+            "title": "Parc Residenses",
+            "sub_title": "2 & 3 BHK flats",
+            "tags": [
+                "2 BHK Starting From 97.50 LACS + TAXES",
+                "3 BHK Starting From 1.37 CR. + TAXES"
+            ],
+            "title_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/f883d2b1-7c77-4eee-99be-241acc4c77ef.jpg",
+            "contact_number": "9001359934",
+            "description": "Kumar Prospera Project has 2 &3 BHK flats in Magarpatta, Hadapsar. It is a new Residential construction in Pune. The project is nestled amongst reputed EON & Magarpatta IT Parks, world-class Amanora & Seasons malls. The project offers flats for sale in Hadapsar. Though set in the hub of activities, Kumar Prospera fulfils the much-awaited supply of residential dwellings in the area around Magarpatta, Mundhwa,  Keshav Nagar and Kharadi with in-house modern amenities in combination with schools, workplace and malls in the vicinity. Thus providing a high quality of life. The developer Kumar Properties has been the hallmark of trust and excellence for more than five decades, has the impeccable quality record, and known for thoughtful design coupled with rich experience to create a masterpiece in luxury residences.",
+            "flat_view": {
+                "walk_through": "https://assets-common.kumarworld.v-verse.space/uploads/files/8417404e-035d-4805-81a1-a1477c989764.mp4",
+                "flat_view_360": "https://assets-common.kumarworld.v-verse.space/uploads/files/8417404e-035d-4805-81a1-a1477c989764.mp4",
+                "live_view": "https://assets-common.kumarworld.v-verse.space/uploads/files/8417404e-035d-4805-81a1-a1477c989764.mp4",
+                "_id": "64bc1289d9fbef66dd6f4968"
+            },
+            "tech_stack": {
+                "title": "Modern Technology – Superstructure, points: []",
+                "description": "Kumar Prospera is amongst the best upcoming projects in Pune using modern technology construction for Superstructure called the Alu-Form system wherein walls and slabs for a typical floor get cast at one time (monolithic construction). The use of aluminium formwork gives better dimensional tolerance eliminating chances of warpage/bulging. Due to this system, external walls have better weather-resistant properties, and issues related to external paint damage and water leakages are practically eliminated. Alu-Form construction also speeds up construction at the site without compromising on the quality.",
+                "structural_design_architect": "Sunil Mutalik & Associates, Pune",
+                "developer": "Kumar Agro Products Pvt. Ltd.Landscape ",
+                "designer": " Gregory Kunak, Singapore.Liason",
+                "architect": "Jagdish P. Deshpande, Pune.Site",
+                "address": " Magarpatta road, Hadapsar, Pune 411028",
+                "image_top": "https://assets-common.kumarworld.v-verse.space/uploads/files/d894e95b-d434-4603-b1bc-6e3da3f54695.jpg",
+                "image_bottom": "https://assets-common.kumarworld.v-verse.space/uploads/files/3993b66c-2d0d-4d86-9f52-261583f8e980.jpg",
+                "_id": "64bc1289d9fbef66dd6f4969"
+            },
+            "flat_details": {
+                "amenities": {
+                    "top_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/e9ea2684-f4d0-48eb-9259-fc30108b0e76.jpg",
+                    "bottom_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/7d89f29e-f991-48f2-93f4-517c5a786df8.jpg",
+                    "bulleting": [
+                        {
+                            "title": "Club House",
+                            "points": [
+                                "Gymnasium",
+                                "Multipurpose Hall",
+                                "Swimming Pool with Kids Pool and Pool Deck Area",
+                                "Table Tennis",
+                                "Indoor Games Room",
+                                "Swimming Pool Change Rooms."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f496c"
+                        },
+                        {
+                            "title": "Outdoor Party Lawn Area along with pantry and open-air Food court.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f496d"
+                        },
+                        {
+                            "title": "Tennis Court.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f496e"
+                        },
+                        {
+                            "title": "Basket Ball Court",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f496f"
+                        },
+                        {
+                            "title": "Outdoor Children play area along with a toddler play area.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f4970"
+                        },
+                        {
+                            "title": "Jogging Track.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f4971"
+                        },
+                        {
+                            "title": "Senior Citizen Plaza.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f4972"
+                        },
+                        {
+                            "title": "Outdoor Gym Area.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f4973"
+                        },
+                        {
+                            "title": "Outdoor Yoga Pavilion/s.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f4974"
+                        },
+                        {
+                            "title": "Children Skating Ring.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f4975"
+                        },
+                        {
+                            "title": "Net Cricket Area.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f4976"
+                        },
+                        {
+                            "title": "Futsal Court/ Multipurpose Court.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f4977"
+                        },
+                        {
+                            "title": "Sewage Treatment Plant and Water Treatment Plant.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f4978"
+                        }
+                    ],
+                    "_id": "64bc1289d9fbef66dd6f496b"
+                },
+                "specification": {
+                    "top_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/75c7a088-b144-4b36-a30e-2b2759694810.jpg",
+                    "bottom_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/8a312923-3833-4cea-9fc2-11df719cabc9.jpg",
+                    "bulleting": [
+                        {
+                            "title": "Construction",
+                            "points": [
+                                "A-class, earthquake-resistant construction."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f497a"
+                        },
+                        {
+                            "title": "Flooring",
+                            "points": [
+                                "Vitrified tiles in living, kitchen and bedrooms, Matt finished Ceramic Tile flooring in toilets, Anti-skid tiles for balconies/terraces."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f497b"
+                        },
+                        {
+                            "title": "Doors",
+                            "points": [
+                                "Vinyl finished flush door with SS fittings for Entrance Door, HDF Skin moulded flush doors with SS fittings for bedrooms and toilets."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f497c"
+                        },
+                        {
+                            "title": "Walls And Ceiling",
+                            "points": [
+                                "Gypsum punning on walls, Superior OBD Paint for walls and ceilings."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f497d"
+                        },
+                        {
+                            "title": "Windows",
+                            "points": [
+                                "Powder Coated Aluminum Sliding Windows with MS Grills."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f497e"
+                        },
+                        {
+                            "title": "Railings for attached Terraces",
+                            "points": [
+                                "Combination of MS / SS / Glass Railing for attached terraces."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f497f"
+                        },
+                        {
+                            "title": "Kitchen",
+                            "points": [
+                                "Granite kitchen counter, Stainless steel sink, Glazed tile dado up to Window Height, Power plug point for Water Purifier and Electric point for Exhaust Fan."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f4980"
+                        },
+                        {
+                            "title": "Plumbing, Bathroom and Toilets",
+                            "points": [
+                                "Concealed plumbing, Ceramic sanitary ware of reputed brand, Single lever diverter in shower areas along with single lever basin mixer for master toilet, 7′ height toilet dado with ceramic tiles."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f4981"
+                        },
+                        {
+                            "title": "Electricals",
+                            "points": [
+                                "Concealed copper wiring in the entire flat with ELCB and MCB, Modular electrical switch and sockets, Electric supply by way of 1 Phase / 3 Phase meter, Adequate points for lights, fans and TV, Telephone point in living and bedrooms, Power Plug point for split AC in Living Room and Master Bedroom."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f4982"
+                        },
+                        {
+                            "title": "Entrance Lobby",
+                            "points": [
+                                "Designer finish entrance lobby."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f4983"
+                        },
+                        {
+                            "title": "Lifts",
+                            "points": [
+                                "Modern, automatic lifts of reputed make."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f4984"
+                        },
+                        {
+                            "title": "External Finish",
+                            "points": [
+                                "Exterior grade texture Paint."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f4985"
+                        },
+                        {
+                            "title": "Safety",
+                            "points": [
+                                "Intercom Facility, Access control main entrance lobby at ground floor with CCTV camera."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f4986"
+                        }
+                    ],
+                    "_id": "64bc1289d9fbef66dd6f4979"
+                },
+                "isometric_view": {
+                    "media": [
+                        "https://assets-common.kumarworld.v-verse.space/uploads/files/38bc12a6-f166-46a8-976a-1b50ea38a665.jpg",
+                        "https://assets-common.kumarworld.v-verse.space/uploads/files/d9489e61-9605-4f51-bdfe-583ca41f3940.jpg"
+                    ],
+                    "_id": "64bc1289d9fbef66dd6f4987"
+                },
+                "_id": "64bc1289d9fbef66dd6f496a"
+            },
+            "gallery_medias": [
+                "https://assets-common.kumarworld.v-verse.space/uploads/files/9b56ae46-9e29-46b9-a5bf-0f6b02b5a1af.jpg",
+                "https://assets-common.kumarworld.v-verse.space/uploads/files/8555bc9c-b4c1-407a-b4fd-12228a454222.jpg",
+                "https://assets-common.kumarworld.v-verse.space/uploads/files/7bda0de4-ee89-4906-a416-2a474939d566.jpg"
+            ],
+            "layout": "https://assets-common.kumarworld.v-verse.space/uploads/files/bf816572-dace-47dc-a9b9-70b78288449d.jpg",
+            "apartment_document": [],
+            "location_id": "64bbf2a46a47b597207a3ea1",
+            "apt_type": "2 BHK",
+            "size": "10 ft",
+            "status": "available",
+            "propertyType": "COMMERCIAL",
+            "location_name": "CityTwo_Mumbai",
+            "city_name": "Mumbai",
+            "city_id": "64bbf0d16a47b597207a3e8d",
+            "__v": 0
+        },
+        {
+            "_id": "64bc1289d9fbef66dd6f4989",
+            "title": "Kumar Infinia Park",
+            "sub_title": "2 & 3 BHK flats",
+            "tags": [
+                "2 BHK Starting From 97.50 LACS + TAXES",
+                "3 BHK Starting From 1.37 CR. + TAXES"
+            ],
+            "title_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/f883d2b1-7c77-4eee-99be-241acc4c77ef.jpg",
+            "contact_number": "9001359934",
+            "description": "Kumar Prospera Project has 2 &3 BHK flats in Magarpatta, Hadapsar. It is a new Residential construction in Pune. The project is nestled amongst reputed EON & Magarpatta IT Parks, world-class Amanora & Seasons malls. The project offers flats for sale in Hadapsar. Though set in the hub of activities, Kumar Prospera fulfils the much-awaited supply of residential dwellings in the area around Magarpatta, Mundhwa,  Keshav Nagar and Kharadi with in-house modern amenities in combination with schools, workplace and malls in the vicinity. Thus providing a high quality of life. The developer Kumar Properties has been the hallmark of trust and excellence for more than five decades, has the impeccable quality record, and known for thoughtful design coupled with rich experience to create a masterpiece in luxury residences.",
+            "flat_view": {
+                "walk_through": "https://assets-common.kumarworld.v-verse.space/uploads/files/8417404e-035d-4805-81a1-a1477c989764.mp4",
+                "flat_view_360": "https://assets-common.kumarworld.v-verse.space/uploads/files/8417404e-035d-4805-81a1-a1477c989764.mp4",
+                "live_view": "https://assets-common.kumarworld.v-verse.space/uploads/files/8417404e-035d-4805-81a1-a1477c989764.mp4",
+                "_id": "64bc1289d9fbef66dd6f498a"
+            },
+            "tech_stack": {
+                "title": "Modern Technology – Superstructure, points: []",
+                "description": "Kumar Prospera is amongst the best upcoming projects in Pune using modern technology construction for Superstructure called the Alu-Form system wherein walls and slabs for a typical floor get cast at one time (monolithic construction). The use of aluminium formwork gives better dimensional tolerance eliminating chances of warpage/bulging. Due to this system, external walls have better weather-resistant properties, and issues related to external paint damage and water leakages are practically eliminated. Alu-Form construction also speeds up construction at the site without compromising on the quality.",
+                "structural_design_architect": "Sunil Mutalik & Associates, Pune",
+                "developer": "Kumar Agro Products Pvt. Ltd.Landscape ",
+                "designer": " Gregory Kunak, Singapore.Liason",
+                "architect": "Jagdish P. Deshpande, Pune.Site",
+                "address": " Magarpatta road, Hadapsar, Pune 411028",
+                "image_top": "https://assets-common.kumarworld.v-verse.space/uploads/files/d894e95b-d434-4603-b1bc-6e3da3f54695.jpg",
+                "image_bottom": "https://assets-common.kumarworld.v-verse.space/uploads/files/3993b66c-2d0d-4d86-9f52-261583f8e980.jpg",
+                "_id": "64bc1289d9fbef66dd6f498b"
+            },
+            "flat_details": {
+                "amenities": {
+                    "top_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/e9ea2684-f4d0-48eb-9259-fc30108b0e76.jpg",
+                    "bottom_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/7d89f29e-f991-48f2-93f4-517c5a786df8.jpg",
+                    "bulleting": [
+                        {
+                            "title": "Club House",
+                            "points": [
+                                "Gymnasium",
+                                "Multipurpose Hall",
+                                "Swimming Pool with Kids Pool and Pool Deck Area",
+                                "Table Tennis",
+                                "Indoor Games Room",
+                                "Swimming Pool Change Rooms."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f498e"
+                        },
+                        {
+                            "title": "Outdoor Party Lawn Area along with pantry and open-air Food court.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f498f"
+                        },
+                        {
+                            "title": "Tennis Court.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f4990"
+                        },
+                        {
+                            "title": "Basket Ball Court",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f4991"
+                        },
+                        {
+                            "title": "Outdoor Children play area along with a toddler play area.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f4992"
+                        },
+                        {
+                            "title": "Jogging Track.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f4993"
+                        },
+                        {
+                            "title": "Senior Citizen Plaza.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f4994"
+                        },
+                        {
+                            "title": "Outdoor Gym Area.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f4995"
+                        },
+                        {
+                            "title": "Outdoor Yoga Pavilion/s.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f4996"
+                        },
+                        {
+                            "title": "Children Skating Ring.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f4997"
+                        },
+                        {
+                            "title": "Net Cricket Area.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f4998"
+                        },
+                        {
+                            "title": "Futsal Court/ Multipurpose Court.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f4999"
+                        },
+                        {
+                            "title": "Sewage Treatment Plant and Water Treatment Plant.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f499a"
+                        }
+                    ],
+                    "_id": "64bc1289d9fbef66dd6f498d"
+                },
+                "specification": {
+                    "top_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/75c7a088-b144-4b36-a30e-2b2759694810.jpg",
+                    "bottom_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/8a312923-3833-4cea-9fc2-11df719cabc9.jpg",
+                    "bulleting": [
+                        {
+                            "title": "Construction",
+                            "points": [
+                                "A-class, earthquake-resistant construction."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f499c"
+                        },
+                        {
+                            "title": "Flooring",
+                            "points": [
+                                "Vitrified tiles in living, kitchen and bedrooms, Matt finished Ceramic Tile flooring in toilets, Anti-skid tiles for balconies/terraces."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f499d"
+                        },
+                        {
+                            "title": "Doors",
+                            "points": [
+                                "Vinyl finished flush door with SS fittings for Entrance Door, HDF Skin moulded flush doors with SS fittings for bedrooms and toilets."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f499e"
+                        },
+                        {
+                            "title": "Walls And Ceiling",
+                            "points": [
+                                "Gypsum punning on walls, Superior OBD Paint for walls and ceilings."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f499f"
+                        },
+                        {
+                            "title": "Windows",
+                            "points": [
+                                "Powder Coated Aluminum Sliding Windows with MS Grills."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49a0"
+                        },
+                        {
+                            "title": "Railings for attached Terraces",
+                            "points": [
+                                "Combination of MS / SS / Glass Railing for attached terraces."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49a1"
+                        },
+                        {
+                            "title": "Kitchen",
+                            "points": [
+                                "Granite kitchen counter, Stainless steel sink, Glazed tile dado up to Window Height, Power plug point for Water Purifier and Electric point for Exhaust Fan."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49a2"
+                        },
+                        {
+                            "title": "Plumbing, Bathroom and Toilets",
+                            "points": [
+                                "Concealed plumbing, Ceramic sanitary ware of reputed brand, Single lever diverter in shower areas along with single lever basin mixer for master toilet, 7′ height toilet dado with ceramic tiles."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49a3"
+                        },
+                        {
+                            "title": "Electricals",
+                            "points": [
+                                "Concealed copper wiring in the entire flat with ELCB and MCB, Modular electrical switch and sockets, Electric supply by way of 1 Phase / 3 Phase meter, Adequate points for lights, fans and TV, Telephone point in living and bedrooms, Power Plug point for split AC in Living Room and Master Bedroom."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49a4"
+                        },
+                        {
+                            "title": "Entrance Lobby",
+                            "points": [
+                                "Designer finish entrance lobby."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49a5"
+                        },
+                        {
+                            "title": "Lifts",
+                            "points": [
+                                "Modern, automatic lifts of reputed make."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49a6"
+                        },
+                        {
+                            "title": "External Finish",
+                            "points": [
+                                "Exterior grade texture Paint."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49a7"
+                        },
+                        {
+                            "title": "Safety",
+                            "points": [
+                                "Intercom Facility, Access control main entrance lobby at ground floor with CCTV camera."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49a8"
+                        }
+                    ],
+                    "_id": "64bc1289d9fbef66dd6f499b"
+                },
+                "isometric_view": {
+                    "media": [
+                        "https://assets-common.kumarworld.v-verse.space/uploads/files/38bc12a6-f166-46a8-976a-1b50ea38a665.jpg",
+                        "https://assets-common.kumarworld.v-verse.space/uploads/files/d9489e61-9605-4f51-bdfe-583ca41f3940.jpg"
+                    ],
+                    "_id": "64bc1289d9fbef66dd6f49a9"
+                },
+                "_id": "64bc1289d9fbef66dd6f498c"
+            },
+            "gallery_medias": [
+                "https://assets-common.kumarworld.v-verse.space/uploads/files/9b56ae46-9e29-46b9-a5bf-0f6b02b5a1af.jpg",
+                "https://assets-common.kumarworld.v-verse.space/uploads/files/8555bc9c-b4c1-407a-b4fd-12228a454222.jpg",
+                "https://assets-common.kumarworld.v-verse.space/uploads/files/7bda0de4-ee89-4906-a416-2a474939d566.jpg"
+            ],
+            "layout": "https://assets-common.kumarworld.v-verse.space/uploads/files/bf816572-dace-47dc-a9b9-70b78288449d.jpg",
+            "apartment_document": [],
+            "location_id": "64bbf2826a47b597207a3e95",
+            "apt_type": "2 BHK",
+            "size": "10 ft",
+            "status": "available",
+            "propertyType": "COMMERCIAL",
+            "location_name": "CityOne_Banglore",
+            "city_name": "Banglore",
+            "city_id": "64bbe49abfbb91d3b0775c2b",
+            "__v": 0
+        },
+        {
+            "_id": "64bc1289d9fbef66dd6f49ab",
+            "title": "Park Infinia",
+            "sub_title": "2 & 3 BHK flats",
+            "tags": [
+                "2 BHK Starting From 97.50 LACS + TAXES",
+                "3 BHK Starting From 1.37 CR. + TAXES"
+            ],
+            "title_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/f883d2b1-7c77-4eee-99be-241acc4c77ef.jpg",
+            "contact_number": "9001359934",
+            "description": "Kumar Prospera Project has 2 &3 BHK flats in Magarpatta, Hadapsar. It is a new Residential construction in Pune. The project is nestled amongst reputed EON & Magarpatta IT Parks, world-class Amanora & Seasons malls. The project offers flats for sale in Hadapsar. Though set in the hub of activities, Kumar Prospera fulfils the much-awaited supply of residential dwellings in the area around Magarpatta, Mundhwa,  Keshav Nagar and Kharadi with in-house modern amenities in combination with schools, workplace and malls in the vicinity. Thus providing a high quality of life. The developer Kumar Properties has been the hallmark of trust and excellence for more than five decades, has the impeccable quality record, and known for thoughtful design coupled with rich experience to create a masterpiece in luxury residences.",
+            "flat_view": {
+                "walk_through": "https://assets-common.kumarworld.v-verse.space/uploads/files/8417404e-035d-4805-81a1-a1477c989764.mp4",
+                "flat_view_360": "https://assets-common.kumarworld.v-verse.space/uploads/files/8417404e-035d-4805-81a1-a1477c989764.mp4",
+                "live_view": "https://assets-common.kumarworld.v-verse.space/uploads/files/8417404e-035d-4805-81a1-a1477c989764.mp4",
+                "_id": "64bc1289d9fbef66dd6f49ac"
+            },
+            "tech_stack": {
+                "title": "Modern Technology – Superstructure, points: []",
+                "description": "Kumar Prospera is amongst the best upcoming projects in Pune using modern technology construction for Superstructure called the Alu-Form system wherein walls and slabs for a typical floor get cast at one time (monolithic construction). The use of aluminium formwork gives better dimensional tolerance eliminating chances of warpage/bulging. Due to this system, external walls have better weather-resistant properties, and issues related to external paint damage and water leakages are practically eliminated. Alu-Form construction also speeds up construction at the site without compromising on the quality.",
+                "structural_design_architect": "Sunil Mutalik & Associates, Pune",
+                "developer": "Kumar Agro Products Pvt. Ltd.Landscape ",
+                "designer": " Gregory Kunak, Singapore.Liason",
+                "architect": "Jagdish P. Deshpande, Pune.Site",
+                "address": " Magarpatta road, Hadapsar, Pune 411028",
+                "image_top": "https://assets-common.kumarworld.v-verse.space/uploads/files/d894e95b-d434-4603-b1bc-6e3da3f54695.jpg",
+                "image_bottom": "https://assets-common.kumarworld.v-verse.space/uploads/files/3993b66c-2d0d-4d86-9f52-261583f8e980.jpg",
+                "_id": "64bc1289d9fbef66dd6f49ad"
+            },
+            "flat_details": {
+                "amenities": {
+                    "top_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/e9ea2684-f4d0-48eb-9259-fc30108b0e76.jpg",
+                    "bottom_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/7d89f29e-f991-48f2-93f4-517c5a786df8.jpg",
+                    "bulleting": [
+                        {
+                            "title": "Club House",
+                            "points": [
+                                "Gymnasium",
+                                "Multipurpose Hall",
+                                "Swimming Pool with Kids Pool and Pool Deck Area",
+                                "Table Tennis",
+                                "Indoor Games Room",
+                                "Swimming Pool Change Rooms."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49b0"
+                        },
+                        {
+                            "title": "Outdoor Party Lawn Area along with pantry and open-air Food court.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f49b1"
+                        },
+                        {
+                            "title": "Tennis Court.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f49b2"
+                        },
+                        {
+                            "title": "Basket Ball Court",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f49b3"
+                        },
+                        {
+                            "title": "Outdoor Children play area along with a toddler play area.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f49b4"
+                        },
+                        {
+                            "title": "Jogging Track.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f49b5"
+                        },
+                        {
+                            "title": "Senior Citizen Plaza.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f49b6"
+                        },
+                        {
+                            "title": "Outdoor Gym Area.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f49b7"
+                        },
+                        {
+                            "title": "Outdoor Yoga Pavilion/s.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f49b8"
+                        },
+                        {
+                            "title": "Children Skating Ring.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f49b9"
+                        },
+                        {
+                            "title": "Net Cricket Area.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f49ba"
+                        },
+                        {
+                            "title": "Futsal Court/ Multipurpose Court.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f49bb"
+                        },
+                        {
+                            "title": "Sewage Treatment Plant and Water Treatment Plant.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f49bc"
+                        }
+                    ],
+                    "_id": "64bc1289d9fbef66dd6f49af"
+                },
+                "specification": {
+                    "top_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/75c7a088-b144-4b36-a30e-2b2759694810.jpg",
+                    "bottom_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/8a312923-3833-4cea-9fc2-11df719cabc9.jpg",
+                    "bulleting": [
+                        {
+                            "title": "Construction",
+                            "points": [
+                                "A-class, earthquake-resistant construction."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49be"
+                        },
+                        {
+                            "title": "Flooring",
+                            "points": [
+                                "Vitrified tiles in living, kitchen and bedrooms, Matt finished Ceramic Tile flooring in toilets, Anti-skid tiles for balconies/terraces."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49bf"
+                        },
+                        {
+                            "title": "Doors",
+                            "points": [
+                                "Vinyl finished flush door with SS fittings for Entrance Door, HDF Skin moulded flush doors with SS fittings for bedrooms and toilets."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49c0"
+                        },
+                        {
+                            "title": "Walls And Ceiling",
+                            "points": [
+                                "Gypsum punning on walls, Superior OBD Paint for walls and ceilings."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49c1"
+                        },
+                        {
+                            "title": "Windows",
+                            "points": [
+                                "Powder Coated Aluminum Sliding Windows with MS Grills."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49c2"
+                        },
+                        {
+                            "title": "Railings for attached Terraces",
+                            "points": [
+                                "Combination of MS / SS / Glass Railing for attached terraces."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49c3"
+                        },
+                        {
+                            "title": "Kitchen",
+                            "points": [
+                                "Granite kitchen counter, Stainless steel sink, Glazed tile dado up to Window Height, Power plug point for Water Purifier and Electric point for Exhaust Fan."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49c4"
+                        },
+                        {
+                            "title": "Plumbing, Bathroom and Toilets",
+                            "points": [
+                                "Concealed plumbing, Ceramic sanitary ware of reputed brand, Single lever diverter in shower areas along with single lever basin mixer for master toilet, 7′ height toilet dado with ceramic tiles."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49c5"
+                        },
+                        {
+                            "title": "Electricals",
+                            "points": [
+                                "Concealed copper wiring in the entire flat with ELCB and MCB, Modular electrical switch and sockets, Electric supply by way of 1 Phase / 3 Phase meter, Adequate points for lights, fans and TV, Telephone point in living and bedrooms, Power Plug point for split AC in Living Room and Master Bedroom."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49c6"
+                        },
+                        {
+                            "title": "Entrance Lobby",
+                            "points": [
+                                "Designer finish entrance lobby."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49c7"
+                        },
+                        {
+                            "title": "Lifts",
+                            "points": [
+                                "Modern, automatic lifts of reputed make."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49c8"
+                        },
+                        {
+                            "title": "External Finish",
+                            "points": [
+                                "Exterior grade texture Paint."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49c9"
+                        },
+                        {
+                            "title": "Safety",
+                            "points": [
+                                "Intercom Facility, Access control main entrance lobby at ground floor with CCTV camera."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49ca"
+                        }
+                    ],
+                    "_id": "64bc1289d9fbef66dd6f49bd"
+                },
+                "isometric_view": {
+                    "media": [
+                        "https://assets-common.kumarworld.v-verse.space/uploads/files/38bc12a6-f166-46a8-976a-1b50ea38a665.jpg",
+                        "https://assets-common.kumarworld.v-verse.space/uploads/files/d9489e61-9605-4f51-bdfe-583ca41f3940.jpg"
+                    ],
+                    "_id": "64bc1289d9fbef66dd6f49cb"
+                },
+                "_id": "64bc1289d9fbef66dd6f49ae"
+            },
+            "gallery_medias": [
+                "https://assets-common.kumarworld.v-verse.space/uploads/files/9b56ae46-9e29-46b9-a5bf-0f6b02b5a1af.jpg",
+                "https://assets-common.kumarworld.v-verse.space/uploads/files/8555bc9c-b4c1-407a-b4fd-12228a454222.jpg",
+                "https://assets-common.kumarworld.v-verse.space/uploads/files/7bda0de4-ee89-4906-a416-2a474939d566.jpg"
+            ],
+            "layout": "https://assets-common.kumarworld.v-verse.space/uploads/files/bf816572-dace-47dc-a9b9-70b78288449d.jpg",
+            "apartment_document": [],
+            "location_id": "64bbe4a9bfbb91d3b0775c30",
+            "apt_type": "3 BHK",
+            "size": "10 ft",
+            "status": "available",
+            "propertyType": "COMMERCIAL",
+            "location_name": "dasarahalli",
+            "city_name": "Banglore",
+            "city_id": "64bbe49abfbb91d3b0775c2b",
+            "__v": 0
+        },
+        {
+            "_id": "64bc1289d9fbef66dd6f49cd",
+            "title": "Kumar Infinia Park",
+            "sub_title": "2 & 3 BHK flats",
+            "tags": [
+                "2 BHK Starting From 97.50 LACS + TAXES",
+                "3 BHK Starting From 1.37 CR. + TAXES"
+            ],
+            "title_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/f883d2b1-7c77-4eee-99be-241acc4c77ef.jpg",
+            "contact_number": "9001359934",
+            "description": "Kumar Prospera Project has 2 &3 BHK flats in Magarpatta, Hadapsar. It is a new Residential construction in Pune. The project is nestled amongst reputed EON & Magarpatta IT Parks, world-class Amanora & Seasons malls. The project offers flats for sale in Hadapsar. Though set in the hub of activities, Kumar Prospera fulfils the much-awaited supply of residential dwellings in the area around Magarpatta, Mundhwa,  Keshav Nagar and Kharadi with in-house modern amenities in combination with schools, workplace and malls in the vicinity. Thus providing a high quality of life. The developer Kumar Properties has been the hallmark of trust and excellence for more than five decades, has the impeccable quality record, and known for thoughtful design coupled with rich experience to create a masterpiece in luxury residences.",
+            "flat_view": {
+                "walk_through": "https://assets-common.kumarworld.v-verse.space/uploads/files/8417404e-035d-4805-81a1-a1477c989764.mp4",
+                "flat_view_360": "https://assets-common.kumarworld.v-verse.space/uploads/files/8417404e-035d-4805-81a1-a1477c989764.mp4",
+                "live_view": "https://assets-common.kumarworld.v-verse.space/uploads/files/8417404e-035d-4805-81a1-a1477c989764.mp4",
+                "_id": "64bc1289d9fbef66dd6f49ce"
+            },
+            "tech_stack": {
+                "title": "Modern Technology – Superstructure, points: []",
+                "description": "Kumar Prospera is amongst the best upcoming projects in Pune using modern technology construction for Superstructure called the Alu-Form system wherein walls and slabs for a typical floor get cast at one time (monolithic construction). The use of aluminium formwork gives better dimensional tolerance eliminating chances of warpage/bulging. Due to this system, external walls have better weather-resistant properties, and issues related to external paint damage and water leakages are practically eliminated. Alu-Form construction also speeds up construction at the site without compromising on the quality.",
+                "structural_design_architect": "Sunil Mutalik & Associates, Pune",
+                "developer": "Kumar Agro Products Pvt. Ltd.Landscape ",
+                "designer": " Gregory Kunak, Singapore.Liason",
+                "architect": "Jagdish P. Deshpande, Pune.Site",
+                "address": " Magarpatta road, Hadapsar, Pune 411028",
+                "image_top": "https://assets-common.kumarworld.v-verse.space/uploads/files/d894e95b-d434-4603-b1bc-6e3da3f54695.jpg",
+                "image_bottom": "https://assets-common.kumarworld.v-verse.space/uploads/files/3993b66c-2d0d-4d86-9f52-261583f8e980.jpg",
+                "_id": "64bc1289d9fbef66dd6f49cf"
+            },
+            "flat_details": {
+                "amenities": {
+                    "top_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/e9ea2684-f4d0-48eb-9259-fc30108b0e76.jpg",
+                    "bottom_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/7d89f29e-f991-48f2-93f4-517c5a786df8.jpg",
+                    "bulleting": [
+                        {
+                            "title": "Club House",
+                            "points": [
+                                "Gymnasium",
+                                "Multipurpose Hall",
+                                "Swimming Pool with Kids Pool and Pool Deck Area",
+                                "Table Tennis",
+                                "Indoor Games Room",
+                                "Swimming Pool Change Rooms."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49d2"
+                        },
+                        {
+                            "title": "Outdoor Party Lawn Area along with pantry and open-air Food court.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f49d3"
+                        },
+                        {
+                            "title": "Tennis Court.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f49d4"
+                        },
+                        {
+                            "title": "Basket Ball Court",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f49d5"
+                        },
+                        {
+                            "title": "Outdoor Children play area along with a toddler play area.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f49d6"
+                        },
+                        {
+                            "title": "Jogging Track.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f49d7"
+                        },
+                        {
+                            "title": "Senior Citizen Plaza.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f49d8"
+                        },
+                        {
+                            "title": "Outdoor Gym Area.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f49d9"
+                        },
+                        {
+                            "title": "Outdoor Yoga Pavilion/s.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f49da"
+                        },
+                        {
+                            "title": "Children Skating Ring.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f49db"
+                        },
+                        {
+                            "title": "Net Cricket Area.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f49dc"
+                        },
+                        {
+                            "title": "Futsal Court/ Multipurpose Court.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f49dd"
+                        },
+                        {
+                            "title": "Sewage Treatment Plant and Water Treatment Plant.",
+                            "points": [],
+                            "_id": "64bc1289d9fbef66dd6f49de"
+                        }
+                    ],
+                    "_id": "64bc1289d9fbef66dd6f49d1"
+                },
+                "specification": {
+                    "top_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/75c7a088-b144-4b36-a30e-2b2759694810.jpg",
+                    "bottom_image": "https://assets-common.kumarworld.v-verse.space/uploads/files/8a312923-3833-4cea-9fc2-11df719cabc9.jpg",
+                    "bulleting": [
+                        {
+                            "title": "Construction",
+                            "points": [
+                                "A-class, earthquake-resistant construction."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49e0"
+                        },
+                        {
+                            "title": "Flooring",
+                            "points": [
+                                "Vitrified tiles in living, kitchen and bedrooms, Matt finished Ceramic Tile flooring in toilets, Anti-skid tiles for balconies/terraces."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49e1"
+                        },
+                        {
+                            "title": "Doors",
+                            "points": [
+                                "Vinyl finished flush door with SS fittings for Entrance Door, HDF Skin moulded flush doors with SS fittings for bedrooms and toilets."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49e2"
+                        },
+                        {
+                            "title": "Walls And Ceiling",
+                            "points": [
+                                "Gypsum punning on walls, Superior OBD Paint for walls and ceilings."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49e3"
+                        },
+                        {
+                            "title": "Windows",
+                            "points": [
+                                "Powder Coated Aluminum Sliding Windows with MS Grills."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49e4"
+                        },
+                        {
+                            "title": "Railings for attached Terraces",
+                            "points": [
+                                "Combination of MS / SS / Glass Railing for attached terraces."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49e5"
+                        },
+                        {
+                            "title": "Kitchen",
+                            "points": [
+                                "Granite kitchen counter, Stainless steel sink, Glazed tile dado up to Window Height, Power plug point for Water Purifier and Electric point for Exhaust Fan."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49e6"
+                        },
+                        {
+                            "title": "Plumbing, Bathroom and Toilets",
+                            "points": [
+                                "Concealed plumbing, Ceramic sanitary ware of reputed brand, Single lever diverter in shower areas along with single lever basin mixer for master toilet, 7′ height toilet dado with ceramic tiles."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49e7"
+                        },
+                        {
+                            "title": "Electricals",
+                            "points": [
+                                "Concealed copper wiring in the entire flat with ELCB and MCB, Modular electrical switch and sockets, Electric supply by way of 1 Phase / 3 Phase meter, Adequate points for lights, fans and TV, Telephone point in living and bedrooms, Power Plug point for split AC in Living Room and Master Bedroom."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49e8"
+                        },
+                        {
+                            "title": "Entrance Lobby",
+                            "points": [
+                                "Designer finish entrance lobby."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49e9"
+                        },
+                        {
+                            "title": "Lifts",
+                            "points": [
+                                "Modern, automatic lifts of reputed make."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49ea"
+                        },
+                        {
+                            "title": "External Finish",
+                            "points": [
+                                "Exterior grade texture Paint."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49eb"
+                        },
+                        {
+                            "title": "Safety",
+                            "points": [
+                                "Intercom Facility, Access control main entrance lobby at ground floor with CCTV camera."
+                            ],
+                            "_id": "64bc1289d9fbef66dd6f49ec"
+                        }
+                    ],
+                    "_id": "64bc1289d9fbef66dd6f49df"
+                },
+                "isometric_view": {
+                    "media": [
+                        "https://assets-common.kumarworld.v-verse.space/uploads/files/38bc12a6-f166-46a8-976a-1b50ea38a665.jpg",
+                        "https://assets-common.kumarworld.v-verse.space/uploads/files/d9489e61-9605-4f51-bdfe-583ca41f3940.jpg"
+                    ],
+                    "_id": "64bc1289d9fbef66dd6f49ed"
+                },
+                "_id": "64bc1289d9fbef66dd6f49d0"
+            },
+            "gallery_medias": [
+                "https://assets-common.kumarworld.v-verse.space/uploads/files/9b56ae46-9e29-46b9-a5bf-0f6b02b5a1af.jpg",
+                "https://assets-common.kumarworld.v-verse.space/uploads/files/8555bc9c-b4c1-407a-b4fd-12228a454222.jpg",
+                "https://assets-common.kumarworld.v-verse.space/uploads/files/7bda0de4-ee89-4906-a416-2a474939d566.jpg"
+            ],
+            "layout": "https://assets-common.kumarworld.v-verse.space/uploads/files/bf816572-dace-47dc-a9b9-70b78288449d.jpg",
+            "apartment_document": [],
+            "location_id": "64bbf2896a47b597207a3e99",
+            "apt_type": "2 BHK",
+            "size": "10 ft",
+            "status": "available",
+            "propertyType": "COMMERCIAL",
+            "location_name": "CityTwo_Banglore",
+            "city_name": "Banglore",
+            "city_id": "64bbe49abfbb91d3b0775c2b",
+            "__v": 0
+        }
+    ],
+    "status": 200,
+    "isSuccessful": true
+}

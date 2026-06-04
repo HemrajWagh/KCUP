@@ -1,0 +1,121 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ========================================= */
+/* 1. THEME VARIABLES (Tailwind v4)          */
+/* ========================================= */
+@theme {
+  /* Brand Typography */
+  --font-sans: var(--font-nexa), ui-sans-serif, system-ui, sans-serif;
+  --font-special: var(--font-bodoni), ui-serif, Georgia, serif;
+
+  /* Brand Colors */
+  --color-brand-orange: #F58220;
+  --color-brand-black: #000000;
+  /* --color-brand-cream: #FFFFFF; */
+  --color-brand-cream: #faf6f0;
+  --color-brand-yellow: #FFD12E;
+  --color-brand-blue: #0061AF;
+  --color-brand-teal: #00A79D;
+  --color-brand-wht:#f8fafc;
+
+  /* Shadcn UI Color Mapping */
+  --color-background: oklch(1 0 0);
+  --color-foreground: oklch(0.145 0 0);
+  --color-card: oklch(1 0 0);
+  --color-card-foreground: oklch(0.145 0 0);
+  --color-popover: oklch(1 0 0);
+  --color-popover-foreground: oklch(0.145 0 0);
+  --color-primary: var(--color-brand-orange);
+  --color-primary-foreground: var(--color-brand-cream);
+  --color-secondary: oklch(0.97 0 0);
+  --color-secondary-foreground: oklch(0.205 0 0);
+  --color-muted: oklch(0.97 0 0);
+  --color-muted-foreground: oklch(0.556 0 0);
+  --color-accent: oklch(0.97 0 0);
+  --color-accent-foreground: oklch(0.205 0 0);
+  --color-destructive: oklch(0.577 0.245 27.325);
+  --color-border: oklch(0.922 0 0);
+  --color-input: oklch(0.922 0 0);
+  --color-ring: var(--color-brand-orange);
+
+  /* Shadcn Radius */
+  --radius: 0.625rem;
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+}
+
+/* ========================================= */
+/* 2. BASE LAYER & TYPOGRAPHY ENFORCEMENT    */
+/* ========================================= */
+@layer base {
+  * {
+    @apply border-border outline-ring/50 box-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans font-normal; /* Nexa Regular */
+    /* background-image: url("/assets/common/kumar-bg.png"), linear-gradient(180deg, #faf6f0 0%, #faf6f0 100%); */
+    /* background-size: 100%; */
+    /* background-repeat: no-repeat; */
+  }
+
+  /* Main Headings -> Nexa Black */
+  h1, .h1 {
+    @apply font-sans font-black tracking-tight; 
+  }
+
+  /* Subheadings -> Nexa Bold */
+  h2, h3, h4, h5, h6, .subhead {
+    @apply font-sans font-bold tracking-tight; 
+  }
+
+  /* Paragraphs & Text -> Nexa Regular */
+  p, span, a, li, div {
+    @apply font-sans font-normal; 
+  }
+
+  /* Special Editorial Text -> Bodoni Moda Italic */
+  .special-text {
+    @apply font-special font-normal tracking-wide;
+  }
+}
+
+/* ========================================= */
+/* 3. CUSTOM UTILITIES & OVERRIDES           */
+/* ========================================= */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+#kenytBubbleContainer {
+  display: none !important;
+}
+
+.cursor--pointer {
+  cursor: pointer;
+}
+
+/* Swiper Overrides */
+.swiper-pagination-bullet {
+  background: #333333;
+  width: 5px;
+  height: 5px;
+}

@@ -1,0 +1,102 @@
+// app/properties/[slug]/page.tsx
+import { Metadata } from "next";
+import ProjectDetailClient from "@/app/components/properties/ProjectDetailClient";
+import { getProjects } from "@/app/services/api";
+
+// Helper function to fetch data (replace with your actual API endpoint)
+async function getProjectData(slug: string) {
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URL}/api/projects/${slug}`,
+    {
+      next: { revalidate: 3600 }, // Cache the response, revalidate every hour
+    },
+  );
+  if (!res.ok) return null;
+  const json = await res.json();
+  return json.data;
+}
+
+// 1. Dynamic SEO Metadata Generation
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const project = await getProjectData(slug);
+
+  if (!project) return { title: "Project Not Found" };
+
+  // Map your API's meta tags array to Next.js Metadata
+  const metaMap: Record<string, string> = {};
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  project.meta_tags?.forEach((meta: any) => {
+    if (meta.name === "Title") metaMap.title = meta.tag;
+    if (meta.name === "Description") metaMap.description = meta.tag;
+    if (meta.name === "Keyword") metaMap.keywords = meta.tag;
+  });
+
+  return {
+    title: metaMap.title || `${project.title} | Premium Real Estate`,
+    description: metaMap.description || project.sub_title,
+    keywords: metaMap.keywords,
+  };
+}
+
+export default async function ProjectsPage({
+  searchParams, // Next.js automatically passes the URL query strings here
+}: {
+  searchParams: Promise<Record<string, string>>;
+}) {
+  // 1. Await the incoming URL parameters (e.g., ?city=Pune&beds=3)
+  const params = await searchParams;
+
+  // 2. Await your translated service function
+  const projectsResponse = await getProjects(params);
+
+  // Assuming the API returns { data: [...] }
+  const projects = projectsResponse.data || [];
+
+  return (
+    <div className="container mx-auto">
+      <h1>Our Projects</h1>
+      {/* Map through your projects instantly on the server */}
+      <div className="grid">
+        {projects.map((project: any) => (
+          <div key={project.id}>{project.slug}</div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// export default async function ProjectPage({
+//   params,
+// }: {
+//   params: Promise<{ slug: string }>;
+// }) {
+//   const { slug } = await params;
+//   const projectData = await getProjectData(slug);
+
+//   if (!projectData) {
+//     return (
+//       <div className="min-h-screen flex items-center justify-center">
+//         Project Not Found
+//       </div>
+//     );
+//   }
+
+// 2. JSON-LD Generative Engine Optimization (GEO) Schema
+// const jsonLd = {
+//   "@context": "https://schema.org",
+//   "@type": "RealEstateListing",
+//   name: projectData.title,
+//   description: projectData.description,
+//   image: projectData.title_image?.[0],
+//   address: {
+//     "@type": "PostalAddress",
+//     addressLocality: projectData.city_name,
+//     addressRegion: "Maharashtra",
+//     addressCountry: "IN",
+//   },
+// };
