@@ -66,19 +66,19 @@ export default function Header() {
   }, [pathname]);
 
   // --- Framer Motion Variants ---
-  const glassPanelVariant = {
+  const glassPanelVariant:Variants = {
     hidden: { x: "-100%" },
     show: { x: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } },
     exit: { x: "-100%", transition: { duration: 0.6, ease: [0.25, 1, 0.5, 1] } }
   };
 
-  const staggerContainer = {
+  const staggerContainer:Variants = {
     hidden: { opacity: 0 },
     show: { opacity: 1, transition: { staggerChildren: 0.06, delayChildren: 0.3 } },
     exit: { opacity: 0, transition: { staggerChildren: 0.03, staggerDirection: -1 } }
   };
 
-  const slideUpItem = {
+  const slideUpItem:Variants = {
     hidden: { y: 60, opacity: 0, rotateX: -20 },
     show: { y: 0, opacity: 1, rotateX: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } },
     exit: { y: 20, opacity: 0, transition: { duration: 0.3 } }
@@ -90,7 +90,7 @@ export default function Header() {
     exit: { opacity: 0, y: 15, scale: 0.98, filter: "blur(5px)", transition: { duration: 0.2, ease: "easeIn" } }
   };
 
-  const dropdownVariant = {
+  const dropdownVariant:Variants = {
     hidden: { opacity: 0, y: 15, scale: 0.95, filter: "blur(4px)" },
     show: { opacity: 1, y: 0, scale: 1, filter: "blur(0px)", transition: { duration: 0.3, ease: "easeOut" } },
     exit: { opacity: 0, y: 10, scale: 0.95, filter: "blur(4px)", transition: { duration: 0.2, ease: "easeIn" } }
