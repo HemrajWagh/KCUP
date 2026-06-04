@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { AnimatePresence, motion, useScroll, useMotionValueEvent } from 'framer-motion';
+import { AnimatePresence, motion, useScroll, useMotionValueEvent ,Variants } from 'framer-motion';
 
 export default function Header() {
   const pathname = usePathname();
@@ -84,7 +84,7 @@ export default function Header() {
     exit: { y: 20, opacity: 0, transition: { duration: 0.3 } }
   };
 
-  const megaMenuVariant = {
+  const megaMenuVariant:Variants  = {
     hidden: { opacity: 0, y: 20, scale: 0.98, filter: "blur(5px)" },
     show: { opacity: 1, y: 0, scale: 1, filter: "blur(0px)", transition: { duration: 0.4, ease: [0.16, 1, 0.3, 1] } },
     exit: { opacity: 0, y: 15, scale: 0.98, filter: "blur(5px)", transition: { duration: 0.2, ease: "easeIn" } }
